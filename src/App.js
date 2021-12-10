@@ -21,12 +21,12 @@ function App() {
       </div>
       </div>
       <div className="Breadcrumbs">
-        <div className="Breadcrumbs-text">Новинки</div>
-        <div className="Breadcrumbs-text">Сладкие</div>
-        <div className="Breadcrumbs-text">Хит</div>
-        <div className="Breadcrumbs-text">Крепкие</div>
-        <div className="Breadcrumbs-text">Лонг</div>
-        <div className="Breadcrumbs-text">Шот</div>
+        <button  className="Breadcrumbs-button">Новинки</button>
+        <button className="Breadcrumbs-button">Сладкие</button>
+        <button className="Breadcrumbs-button">Хит</button>
+        <button className="Breadcrumbs-button">Крепкие</button>
+        <button className="Breadcrumbs-button">Лонг</button>
+        <button className="Breadcrumbs-button">Шот</button>
       </div>
       <div className="card">
         <img src={card}/>

@@ -59,8 +59,26 @@
 
 .Breadcrumbs {
   display: flex;
-  /* overflow-x: auto;
-  height: 20px; */
+  overflow: auto;
+  height: auto;
+  align-items: center;
+}
+
+.Breadcrumbs-button {
+  width: 109px;
+  height: 40px;
+  font-family: Roboto;
+  font-size: 18px;
+  background-color: #201F2E;
+  color: #C4C1CF;
+  padding: 0 16px 0 16px;
+  border: none;
+}
+
+.Breadcrumbs-button:hover {
+  border: 1px solid #C4C1CF;
+  box-sizing: border-box;
+  border-radius: 32px;
 }
 
 .Breadcrumbs-text {
@@ -70,10 +88,15 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 21px;
-  color: #C4C1CF
+  color: #C4C1CF  
 }
 
 .Breadcrumbs-text:hover {
+  height: 40px;
+  width: 109px;
+  left: 97px;
+  top: 0px;
+  border-radius: 32px;
   border: 1px solid #C4C1CF;
   box-sizing: border-box;
   border-radius: 32px;
