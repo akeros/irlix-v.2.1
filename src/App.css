@@ -1,38 +1,163 @@
-.App {
-  text-align: center;
+.main {
+  background-color: #201F2E;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+  display: flex;
+  flex-direction:column ;
+  width: 30%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.razmet{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.text {
+  padding: 32px 0 0 32px;
+  width: 91px;
+  left: 32px;
+  top: 37.5%;
+  bottom: 49.04%;
+  /* font-family: Roboto; */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.date {
+  width: 114px;
+  padding: 0 0 0 32px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #C4C1CF;
+}
+
+.logo {
+  padding: 32px 32px 0 0;
+}
+
+.logo-two {
+  margin-left: 45px;
+}
+
+.logo-three {
+ position: absolute;
+ margin-left: 24px;
+}
+
+.Breadcrumbs {
+  display: flex;
+  /* overflow-x: auto;
+  height: 20px; */
+}
+
+.Breadcrumbs-text {
+  padding: 49px 12px 0 32px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #C4C1CF
+}
+
+.Breadcrumbs-text:hover {
+  border: 1px solid #C4C1CF;
+  box-sizing: border-box;
+  border-radius: 32px;
+}
+
+.card {
+  display: flex;
+  padding: 64px 32px 62px 32px;
+}
+.card-two {
+  display: flex;
+  padding: 0px 32px 0px 32px;
+}
+
+.cardblack{
+  display: flex;
+  align-items: flex-end;
+  position: absolute;
+  padding: 16px 0 0 16px;
+}
+
+.cardblacktext {
+  position: absolute;
+  margin: 0 0 32px 25px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.cardblacktextalc {
+  position: absolute;
+  width: 61px;
+  left: 29px;
+  top: 15.29%;
+  bottom: 80.94%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #C4C1CF;
+  margin: 50px 0 0 5px;
+}
+
+.cardtext {
+  width: 132px;
+  left: 32px;
+  top: 83.29%;
+  bottom: 10.12%;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.07em;
+  color: #FFFFFF;
+}
+
+.cardtexttwo {
+  width: 88px;
+  left: 32px;
+  top: 89.41%;
+  bottom: 5.65%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #C4C1CF;
+}
+
+.cardrazmet{
+  position: absolute;
+  margin: 590px 50px 25px 65px;
+}
+.cardrazmettwo {
+  position: absolute;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 1070px 50px 25px 65px;
 }
+/* @media screen and (max-width: 767px ) {
+  .main {
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
+} */
