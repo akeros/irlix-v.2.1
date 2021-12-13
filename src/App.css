@@ -157,6 +157,7 @@
 
 .footer {
   display: flex;
+  /* position: absolute; */
   justify-content: space-between;
   background: #0E0D13;
   height: 96px;
