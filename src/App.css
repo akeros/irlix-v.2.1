@@ -36,7 +36,6 @@
 .date {
   width: 114px;
   padding: 0 0 0 32px;
-  font-family: Roboto;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -59,20 +58,24 @@
 
 .Breadcrumbs {
   display: flex;
+  width: 340px;
   overflow: auto;
   height: auto;
   align-items: center;
+  margin-left: 32px;
 }
 
 .Breadcrumbs-button {
   width: 109px;
   height: 40px;
-  font-family: Roboto;
+  line-height: 21px;
   font-size: 18px;
   background-color: #201F2E;
   color: #C4C1CF;
   padding: 0 16px 0 16px;
   border: none;
+  font-style: normal;
+  font-weight: 300;
 }
 
 .Breadcrumbs-button:hover {
@@ -88,7 +91,7 @@
   font-weight: 300;
   font-size: 18px;
   line-height: 21px;
-  color: #C4C1CF  
+  color: #C4C1CF;
 }
 
 .Breadcrumbs-text:hover {
@@ -161,7 +164,6 @@
   left: 32px;
   top: 89.41%;
   bottom: 5.65%;
-  font-family: Roboto;
   font-style: normal;
   font-weight: 300;
   font-size: 18px;
@@ -171,13 +173,13 @@
 
 .cardrazmet{
   position: absolute;
-  margin: 590px 50px 25px 65px;
+  margin: 560px 50px 25px 65px;
 }
 .cardrazmettwo {
   position: absolute;
   display: flex;
   flex-direction: column;
-  margin: 1070px 50px 25px 65px;
+  margin: 1040px 50px 25px 65px;
 }
 /* @media screen and (max-width: 767px ) {
   .main {
