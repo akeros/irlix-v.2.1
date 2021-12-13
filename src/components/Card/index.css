@@ -1,0 +1,64 @@
+.main {
+  display: flex;
+  position: relative;
+}
+
+.cardblack{
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    padding: 16px 0 0 16px;
+  }
+  
+  .cardblacktext {
+    position: absolute;
+    margin: 0 0 32px 25px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+  }
+  
+  .cardblacktextalc {
+    position: absolute;
+    width: 61px;
+    left: 29px;
+    top: 15.29%;
+    bottom: 80.94%;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #C4C1CF;
+    margin: 50px 0 0 5px;
+  }
+  .cardrazmett{
+    position: absolute;
+    margin: 413px 50px 25px 65px;
+  }
+  .cardtextt {
+    width: 132px;
+    left: 32px;
+    top: 83.29%;
+    bottom: 10.12%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.07em;
+    color: #FFFFFF;
+  }
+  
+  .cardtexttwoo {
+    width: 88px;
+    left: 32px;
+    top: 89.41%;
+    bottom: 5.65%;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    color: #C4C1CF;
+  }  

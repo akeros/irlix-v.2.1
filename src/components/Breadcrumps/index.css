@@ -1,0 +1,31 @@
+.Breadcrumbs {
+    display: flex;
+    width: 340px;
+    overflow: auto;
+    height: auto;
+    align-items: center;
+    margin-left: 32px;
+    margin-top: 30px;
+  }
+  
+  .Breadcrumbs-button {
+    width: 109px;
+    height: 40px;
+    line-height: 21px;
+    font-size: 18px;
+    background-color: #201F2E;
+    color: #C4C1CF;
+    padding: 0 16px 0 16px;
+    border: none;
+    font-style: normal;
+    font-weight: 300;
+    font-family: 'Roboto';
+    border: 1px solid #201F2E;
+    margin: 0 4px 0 4px;
+  }
+  
+  .Breadcrumbs-button:hover {
+    border: 1px solid #C4C1CF;
+    /* box-sizing: border-box; */
+    border-radius: 32px;
+  }
