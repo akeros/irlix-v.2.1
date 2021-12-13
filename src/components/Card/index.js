@@ -1,27 +1,22 @@
 import './index.css';
-import card from '../../card.svg';
-import cardblack from '../../cardblack.svg';
 import flag from '../../images/flag.svg';
 
-function Card() {
+function Card({ img, percents, title, description }) {
   return (
-      <>
-    <div className="main">
-      <div className="card">
-      <img src={card}/>
-        <div className="cardblack">
-        <img src={cardblack}/>
-        <div className="cardblacktext">30%</div>
+    <div className="card">
+      <img src={img}/>
+      <div className="cardblack">
+        <div className="cardblacktext">{percents}%</div>
         <div className="cardblacktextalc">Алкоголь</div>
-        </div>
-        <div className="flag"><img src={flag}/></div>
-    </div>
+      </div>
+      <div className="flag">
+        <img src={flag}/>
+      </div>
       <div className="cardrazmett">
-      <div className="cardtextt">Blackberry</div>
-      <div className="cardtexttwoo">Fresh drink</div>
+        <div className="cardtextt">{title}</div>
+        <div className="cardtexttwoo">{description}</div>
+      </div>
     </div>
-  </div>
-</>
   );
 }
 

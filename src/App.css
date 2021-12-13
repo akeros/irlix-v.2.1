@@ -7,56 +7,15 @@
   position: relative;
 }
 
-.wrapper {
+main {
+  margin-top: 160px;
+  margin-bottom: 96px;
+}
+
+.cards-list {
   display: flex;
-  flex-direction:column ;
-  width: 30%;
+  flex-wrap: wrap;
 }
-
-.razmet{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.text {
-  padding: 32px 0 0 32px;
-  width: 91px;
-  left: 32px;
-  top: 37.5%;
-  bottom: 49.04%;
-  /* font-family: Roboto; */
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
-  color: #FFFFFF;
-}
-
-.date {
-  width: 114px;
-  padding: 0 0 0 32px;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 21px;
-  color: #C4C1CF;
-}
-
-.logo {
-  padding: 32px 32px 0 0;
-}
-
-.logo-two {
-  margin-left: 45px;
-}
-
-.logo-three {
- position: absolute;
- margin-left: 24px;
-}
-
-
 /* .Breadcrumbs-text {
   padding: 49px 12px 0 32px;
   font-family: Roboto;
@@ -78,45 +37,9 @@
   border-radius: 32px;
 }
 
-.card {
-  display: flex;
-  padding: 64px 32px 62px 32px;
-}
 .card-two {
   display: flex;
   padding: 0px 32px 0px 32px;
-}
-
-.cardblack{
-  display: flex;
-  align-items: flex-end;
-  position: absolute;
-  padding: 16px 0 0 16px;
-}
-
-.cardblacktext {
-  position: absolute;
-  margin: 0 0 32px 25px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
-  color: #FFFFFF;
-}
-
-.cardblacktextalc {
-  position: absolute;
-  width: 61px;
-  left: 29px;
-  top: 15.29%;
-  bottom: 80.94%;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 16px;
-  color: #C4C1CF;
-  margin: 50px 0 0 5px;
 }
 
 .cardtext {
@@ -157,13 +80,13 @@
 
 .footer {
   display: flex;
-  /* position: absolute; */
+  position: fixed;
   justify-content: space-between;
   background: #0E0D13;
   height: 96px;
-  width: 387px;
-  left: 0px;
-  top: 0px;
+  right: 0;
+  left: 0;
+  bottom: 0;
   border-top-right-radius: 32px;
   align-items: center;
   border-top-left-radius: 32px;
