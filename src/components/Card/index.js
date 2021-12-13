@@ -1,6 +1,7 @@
 import './index.css';
 import card from '../../card.svg';
 import cardblack from '../../cardblack.svg';
+import flag from '../../images/flag.svg';
 
 function Card() {
   return (
@@ -13,6 +14,7 @@ function Card() {
         <div className="cardblacktext">30%</div>
         <div className="cardblacktextalc">Алкоголь</div>
         </div>
+        <div className="flag"><img src={flag}/></div>
     </div>
       <div className="cardrazmett">
       <div className="cardtextt">Blackberry</div>

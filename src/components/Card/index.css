@@ -51,6 +51,10 @@
     color: #FFFFFF;
   }
   
+.flag {
+  margin: -6px 0px 0 -51px;
+}
+
   .cardtexttwoo {
     width: 88px;
     left: 32px;
