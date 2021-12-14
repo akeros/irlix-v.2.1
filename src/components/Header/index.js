@@ -4,17 +4,17 @@ import Vector from "../../Vector.svg";
 import pub from "../../pub.svg";
 
 const months = [
-  'Январь',
-  'Февраль',
-  'Март',
-  'Апрель',
-  'Май',
-  'Июнь',
-  'Июль',
-  'Август',
-  'Сентябрь',
-  'Ноябрь',
-  'Декабрь',
+  'Января',
+  'Февраля',
+  'Марта',
+  'Апреля',
+  'Мая',
+  'Июня',
+  'Июля',
+  'Августа',
+  'Сентября',
+  'Ноября',
+  'Декабря',
 ];
 
 function Header() {
@@ -38,12 +38,12 @@ function Header() {
         </div>
       </div>
       <nav>
-        <button className="Breadcrumbs-button">Новинки</button>
-        <button className="Breadcrumbs-button">Сладкие</button>
-        <button className="Breadcrumbs-button">Хит</button>
-        <button className="Breadcrumbs-button">Крепкие</button>
-        <button className="Breadcrumbs-button">Лонг</button>
-        <button className="Breadcrumbs-button">Шот</button>
+        <button className="nav-button">Новинки</button>
+        <button className="nav-button">Сладкие</button>
+        <button className="nav-button">Хит</button>
+        <button className="nav-button">Крепкие</button>
+        <button className="nav-button">Лонг</button>
+        <button className="nav-button">Шот</button>
       </nav>
       <div className="opacity"/>
     </header>

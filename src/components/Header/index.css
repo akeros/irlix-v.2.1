@@ -60,7 +60,7 @@ nav {
     margin-top: 30px;
   }
   
-  .Breadcrumbs-button {
+  .nav-button {
     width: 109px;
     height: 40px;
     line-height: 21px;
@@ -75,7 +75,7 @@ nav {
     margin: 0 4px;
   }
   
-  .Breadcrumbs-button:hover {
+  .nav-button:hover {
     border: 1px solid #C4C1CF;
     /* box-sizing: border-box; */
     border-radius: 32px;

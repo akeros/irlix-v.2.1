@@ -1,40 +1,19 @@
-import Vector from './Vector.svg';
-import pub from './pub.svg';
-import line from './line.svg';
-import card from './card.svg';
-import cardtwo from './cardtwo.svg';
-import cardblack from './cardblack.svg';
-import search from './search.svg';
-import Card from './components/Card/index';
-import Header from './components/Header/index';
-import './App.css';
+import React from 'react';
+import Main from './pages/main/index';
+import Description from './pages/description/index';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="main">
-      <Header/>
-      <main>
-        <div className="cards-list">
-          <Card
-            img={card}
-            percents={30}
-            title="Blackberry"
-            description="Fresh drink"
-          />
-          <Card
-            img={cardtwo}
-            percents={10}
-            title="Blackberry"
-            description="Fresh drink"
-          />
-        </div>
-      </main>
-        <div className="footer">
-          <button className="footertext">Избранные</button>
-          <button className="footersearch"> <img src={search}/> </button>
-        </div>
-      </div>  
-  );
-}
+
+const App = () => (
+  <Router basename="/">
+      <Routes>
+        <Route path="/" element={<Main />} />
+        <Route path="/description" element={<Description />} />
+        {/* <Route path="/step-two" element={<MainOne />} />
+        <Route path="/step-three" element={<MainOne />} />
+        <Route path="/step-four" element={<MainOne />} /> */}
+      </Routes>
+    </Router>
+)
 
 export default App;
