@@ -22,9 +22,19 @@
     z-index: 0;
 }
 
+.glavgad {
+    width: 425px;
+    height: 86px;
+    left: -42px;
+    top: 84px;
+    background: #201F2E;
+    border-radius: 32px;
+}
+
 .description-text {
-    background: #0E0D13;
-    margin-top: 416px;
+    border-top-right-radius: 32px;
+    background: linear-gradient(to bottom, #201F2E 50%, black  50%);
+    margin-top: 370px;
     position: absolute;
     /* bottom: 0;
     left: 0;
@@ -36,6 +46,7 @@
 }
 
 .glav {
+    margin-top: 20px;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -51,6 +62,7 @@
 }
 
 .distruction {
+    width: 320px;
     margin-top: 32px;
     margin-bottom: 8px;
     font-style: normal;
@@ -61,6 +73,7 @@
 }
 
 .distruction-text{
+    width: 300px;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
@@ -78,6 +91,7 @@
 }
 
 .titletext {
+    width: 300px;
     margin-top: 8px;
     font-size: 18px;
     font-style: normal;
@@ -90,3 +104,19 @@
     margin-bottom: 96px;
   } */
   
+.marker {
+    position: absolute;
+    right: 0;
+    margin-right: 40px;
+}
+
+.kriv {
+    position: absolute;
+    margin-top: 586px;
+    left: 0;
+}
+
+.inner {
+    display: flex;
+    justify-content: space-between;
+}
