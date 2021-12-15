@@ -68,6 +68,8 @@
   position: absolute;
   top: -4px;
   right: 36px;
+  border: none;
+  background: transparent;
 }
 
 .cardtexttwoo {

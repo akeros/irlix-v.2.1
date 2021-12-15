@@ -1,12 +1,22 @@
 import './index.css';
 import flag from '../../images/flag.svg';
-import { useNavigate } from 'react-router';
+import flaggrey from '../../images/flaggrey.svg';
+import {useNavigate} from 'react-router';
+import {useState} from "react";
 
-function Card({ img, percents, title, description }) {
-    const navigate = useNavigate();
-    function handleClick() {
-        navigate("/description")
-    }
+function Card({img, percents, title, description}) {
+  const navigate = useNavigate();
+
+  function handleClick() {
+    navigate("/description")
+  }
+
+  const [isFavorite, setFavorite] = useState(false);
+
+  function handleFlag() {
+    setFavorite((prevState) => !prevState);
+  }
+
   return (
     <div className="card">
       <button className="style" onClick={handleClick}><img src={img}/></button>
@@ -14,9 +24,9 @@ function Card({ img, percents, title, description }) {
         <div className="cardblacktext">{percents}%</div>
         <div className="cardblacktextalc">Алкоголь</div>
       </div>
-      <div className="flag">
-        <img src={flag}/>
-      </div>
+      <button className="flag" onClick={handleFlag}>
+        <img src={isFavorite ? flag : flaggrey}/>
+      </button>
       <div className="cardrazmett">
         <div className="cardtextt">{title}</div>
         <div className="cardtexttwoo">{description}</div>
