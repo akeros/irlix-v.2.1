@@ -33,20 +33,16 @@
 
 .description-text {
     border-top-right-radius: 32px;
-    background: linear-gradient(to bottom, #201F2E 50%, black  50%);
+    background: #0E0D13;
     margin-top: 370px;
-    position: absolute;
-    /* bottom: 0;
-    left: 0;
-    right: 0; */
+    position: relative;
     font-weight: 300;
     line-height: 21px;
     color: #C4C1CF;
-    padding: 0 32px;
 }
 
 .glav {
-    margin-top: 20px;
+    padding-top: 20px;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -72,14 +68,30 @@
     color: #FFFFFF
 }
 
+.top-bar-segment {
+    border-top-right-radius: 32px;
+    /*overflow: hidden;*/
+    background: linear-gradient(to bottom, #201F2E 80%, #0E0D13  50%);
+    padding: 0 32px;
+    position: relative;
+    z-index: 2;
+}
+
+.main-segment {
+    background-color: #0E0D13;
+    position: relative;
+    padding: 0 32px 20px;
+    z-index: 1;
+}
+
 .distruction-text{
-    width: 300px;
     font-style: normal;
     font-weight: 300;
     font-size: 18px;
     line-height: 21px;
     color: #C4C1CF;
     margin-bottom: 32px;
+    overflow-x: hidden;
 }
 
 .titlemain {
@@ -88,9 +100,13 @@
     font-size: 18px;
     line-height: 21px;
     color: #FFFFFF;
+    position: relative;
+    z-index: 2;
 }
 
 .titletext {
+    position: relative;
+    z-index: 2;
     width: 300px;
     margin-top: 8px;
     font-size: 18px;
@@ -108,15 +124,41 @@
     position: absolute;
     right: 0;
     margin-right: 40px;
+    top: -4px;
+    z-index: 5;
 }
 
 .kriv {
     position: absolute;
-    margin-top: 586px;
+    /*margin-top: 586px;*/
+    bottom: -53px;
     left: 0;
+    z-index: 1;
 }
 
 .inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 2;
+}
+
+.inner-text-left {
+    position: relative;
+    background-color: #201F2E;
+    padding-right: 4px;
+}
+
+.inner-text-right {
+    position: relative;
+    background-color: #201F2E;
+    padding-left: 4px;
+    text-align: right;
+}
+
+.inner-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    overflow-x: hidden;
 }
