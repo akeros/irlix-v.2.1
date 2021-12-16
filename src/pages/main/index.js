@@ -1,8 +1,8 @@
 import card from '../../card.svg';
 import cardtwo from '../../cardtwo.svg';
-import search from '../../search.svg';
 import Card from '../../components/Card/index';
 import Header from '../../components/Header/index';
+import Footer from '../../components/Footer/index';
 import './index.css';
 
 function Main() {
@@ -25,10 +25,7 @@ function Main() {
           />
         </div>
       </main>
-        <div className="footer">
-          <button className="footertext">Избранные</button>
-          <button className="footersearch"> <img src={search}/> </button>
-        </div>
+        <Footer/>
       </div>  
   );
 }

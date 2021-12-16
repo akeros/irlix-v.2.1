@@ -128,6 +128,14 @@
     z-index: 5;
 }
 
+.marker-flag {
+    position: absolute;
+    top: -4px;
+    right: 0;
+    border: none;
+    background: transparent;
+}
+
 .kriv {
     position: absolute;
     /*margin-top: 586px;*/

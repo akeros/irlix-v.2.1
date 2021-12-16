@@ -3,6 +3,7 @@ import arrow from '../../arrow.svg';
 // import fon from '../../fon.svg';
 import flag from '../../images/flag.svg';
 import kriv from '../../kriv.svg';
+import flaggrey from '../../images/flaggrey.svg';
 import './index.css';
 import {useNavigate} from 'react-router';
 import {useEffect, useRef, useState} from "react";
@@ -23,6 +24,12 @@ function Description() {
   // console.log(drawDots());
   console.log(window.innerWidth);
 
+  const [isFavorite, setFavorite] = useState(false);
+
+  function handleFlag() {
+    setFavorite((prevState) => !prevState);
+  }
+
   return (
     <div className="wrapp">
       <button className="fullback" onClick={handleClick}>
@@ -32,7 +39,11 @@ function Description() {
         <img src={cardtitle}/>
       </div>
       <div className="description-text">
-        <div className="marker"><img src={flag}/></div>
+        <div className="marker">
+            <button className="marker-flag" onClick={handleFlag}>
+                <img src={isFavorite ? flag : flaggrey}/>
+            </button>
+        </div>
         <div className="top-bar-segment">
           <div className="glav">Blackberry</div>
           <div className="podglav-text">Fresh drink</div>
