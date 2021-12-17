@@ -11,6 +11,7 @@ import {useEffect, useRef, useState} from "react";
 function Description() {
   const navigate = useNavigate();
 
+
   function handleClick() {
     navigate("/")
   }
@@ -25,6 +26,11 @@ function Description() {
   console.log(window.innerWidth);
 
   const [isFavorite, setFavorite] = useState(false);
+  useEffect(() => {
+    if (isFavorite) {
+      alert('ахтунг')
+    }
+  },[isFavorite]);
 
   function handleFlag() {
     setFavorite((prevState) => !prevState);

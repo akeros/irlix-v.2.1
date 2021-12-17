@@ -38,7 +38,7 @@
 
   .input {
     position: relative;
-    width: 81vw;
+    width: 100%;
     height: 46px;
     right: 14px;
     background: #44414E;
@@ -55,12 +55,13 @@
 
 .krest-table {
   padding: 32px;
+  width: 100%;
 }
 
   .krest-top {
     position: absolute;
   border: none;
-  right: 24px;
+  right: 33px;
   top: 34px;
   }
 
