@@ -54,15 +54,15 @@
   }
 
 .krest-table {
-  padding: 32px;
+  padding: 32px 32px 32px 46px;
   width: 100%;
 }
 
   .krest-top {
     position: absolute;
-  border: none;
-  right: 33px;
-  top: 34px;
+    border: none;
+    right: 33px;
+    top: 34px;
   }
 
   .button-top {

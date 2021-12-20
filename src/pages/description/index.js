@@ -5,12 +5,12 @@ import flag from '../../images/flag.svg';
 import kriv from '../../kriv.svg';
 import flaggrey from '../../images/flaggrey.svg';
 import './index.css';
+import { useToast , renderToast} from '../../hooks';
 import {useNavigate} from 'react-router';
 import {useEffect, useRef, useState} from "react";
 
 function Description() {
   const navigate = useNavigate();
-
 
   function handleClick() {
     navigate("/")
@@ -22,27 +22,35 @@ function Description() {
     return dot.repeat(window.innerWidth)
   }
 
-  // console.log(drawDots());
-  console.log(window.innerWidth);
-
+  const { renderToast, handlerToast } = useToast();
   const [isFavorite, setFavorite] = useState(false);
+  
   useEffect(() => {
-    if (isFavorite) {
-      alert('ахтунг')
-    }
-  },[isFavorite]);
+      if (isFavorite) {
+          handlerToast('Добавлено в избранное');
+      }
+  }, [isFavorite])
+  
+  const handler = () => {
+      setFavorite(prevState => !prevState);
+  }
+  
 
   function handleFlag() {
     setFavorite((prevState) => !prevState);
   }
 
   return (
+    
     <div className="wrapp">
+      <div>
+          <div color={isFavorite} onClick={handler}/>
+          {renderToast()}
+      </div>
       <button className="fullback" onClick={handleClick}>
         <img src={arrow}/>
       </button>
       <div className="src">
-        <img src={cardtitle}/>
       </div>
       <div className="description-text">
         <div className="marker">
