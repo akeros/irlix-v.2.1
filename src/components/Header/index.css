@@ -16,6 +16,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-bottom: 30px;
 }
 
 .text {
@@ -56,8 +57,7 @@ nav {
     overflow: auto;
     height: auto;
     align-items: center;
-    margin-left: 32px;
-    margin-top: 30px;
+    padding-left: 13px;
   }
   
   .nav-button {
@@ -65,7 +65,7 @@ nav {
     height: 40px;
     line-height: 21px;
     font-size: 18px;
-    background-color: #201F2E;
+    background-color: transparent;
     color: #C4C1CF;
     padding: 0 16px;
     font-style: normal;

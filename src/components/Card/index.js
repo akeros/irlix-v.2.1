@@ -1,5 +1,6 @@
 import './index.css';
 import flag from '../../images/flag.svg';
+import Button from '../Button';
 import flaggrey from '../../images/flaggrey.svg';
 import {useNavigate} from 'react-router';
 import {useState} from "react";
@@ -19,6 +20,7 @@ function Card({img, percents, title, description}) {
 
   return (
     <div className="card">
+      <Button/>
       <button className="style" onClick={handleClick}><img src={img}/></button>
       <div className="cardblack">
         <div className="cardblacktext">{percents}%</div>

@@ -3,6 +3,7 @@ import arrow from '../../arrow.svg';
 // import fon from '../../fon.svg';
 import flag from '../../images/flag.svg';
 import kriv from '../../kriv.svg';
+// import background from '../../background.svg';
 import flaggrey from '../../images/flaggrey.svg';
 import './index.css';
 import { useToast , renderToast} from '../../hooks';
