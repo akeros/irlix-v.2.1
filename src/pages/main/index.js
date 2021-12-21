@@ -1,9 +1,8 @@
-import card from '../../card.svg';
-import cardtwo from '../../cardtwo.svg';
 import Card from '../../components/Card/index';
 import Header from '../../components/Header/index';
 import Footer from '../../components/Footer/index';
 import './index.css';
+import { cardArray } from "../../mock/cards";
 
 function Main() {
   return (
@@ -11,18 +10,16 @@ function Main() {
       <Header/>
       <main>
         <div className="cards-list">
-          <Card
-            img={card}
-            percents={30}
-            title="Blackberry"
-            description="Fresh drink"
-          />
-          <Card
-            img={cardtwo}
-            percents={40}
-            title="Мохито"
-            description="Fresh drink"
-          />
+          {cardArray.map((item) => (
+            <Card
+              img={item.img}
+              percents={item.percents}
+              title={item.title}
+              description={item.description}
+              key={item.id}
+              id={item.id}
+            />
+          ))}
         </div>
       </main>
         <Footer/>

@@ -1,17 +1,19 @@
-import cardtitle from '../../cardtitle.svg';
 import arrow from '../../arrow.svg';
-// import fon from '../../fon.svg';
-import flag from '../../images/flag.svg';
 import kriv from '../../kriv.svg';
-// import background from '../../background.svg';
-import flaggrey from '../../images/flaggrey.svg';
 import './index.css';
-import { useToast , renderToast} from '../../hooks';
+import { useToast } from '../../hooks';
 import {useNavigate} from 'react-router';
-import {useEffect, useRef, useState} from "react";
+import {useEffect} from "react";
+import {useParams} from "react-router-dom";
+import {cardArray} from "../../mock/cards";
+import Button from "../../components/Button";
+import { useSelector } from "react-redux";
 
 function Description() {
+  const { id } = useParams();
   const navigate = useNavigate();
+
+  const card = cardArray.find(item => item.id === id);
 
   function handleClick() {
     navigate("/")
@@ -24,30 +26,19 @@ function Description() {
   }
 
   const { renderToast, handlerToast } = useToast();
-  const [isFavorite, setFavorite] = useState(false);
-  
+  const favorites = useSelector((state => state.app.favorites));
+  const isFavorite = favorites.includes(id);
+
   useEffect(() => {
       if (isFavorite) {
           handlerToast('Добавлено в избранное');
       }
   }, [isFavorite])
-  
-  const handler = () => {
-      setFavorite(prevState => !prevState);
-  }
-  
-
-  function handleFlag() {
-    setFavorite((prevState) => !prevState);
-  }
 
   return (
-    
+
     <div className="wrapp">
-      <div>
-          <div color={isFavorite} onClick={handler}/>
-          {renderToast()}
-      </div>
+      {renderToast()}
       <button className="fullback" onClick={handleClick}>
         <img src={arrow}/>
       </button>
@@ -55,13 +46,11 @@ function Description() {
       </div>
       <div className="description-text">
         <div className="marker">
-            <button className="marker-flag" onClick={handleFlag}>
-                <img src={isFavorite ? flag : flaggrey}/>
-            </button>
+            <Button id={id} style="marker-flag" />
         </div>
         <div className="top-bar-segment">
-          <div className="glav">Blackberry</div>
-          <div className="podglav-text">Fresh drink</div>
+          <div className="glav">{card.title}</div>
+          <div className="podglav-text">{card.description}</div>
           <div className="distruction">Ингредиенты</div>
           <div className="distruction-text">
             <div className='kriv'><img src={kriv}/></div>

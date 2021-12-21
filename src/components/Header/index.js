@@ -45,7 +45,6 @@ function Header() {
         <button className="nav-button">Лонг</button>
         <button className="nav-button">Шот</button>
       </nav>
-      <div className="opacity"/>
     </header>
 
   );

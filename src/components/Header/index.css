@@ -4,7 +4,6 @@
 }
 
 header {
-    background-color: #201F2E;
     position: fixed;
     z-index: 3;
     left: 0;
@@ -13,6 +12,7 @@ header {
 }
 
 .razmet{
+    background: #201F2E;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -53,10 +53,12 @@ header {
 
 
 nav {
+    Background: linear-gradient(
+          180deg, #201F2E 36%, rgba(32, 31, 46, 0) 100%);
     display: flex;
     overflow: auto;
-    height: auto;
-    align-items: center;
+    height: 60px;
+    align-items: flex-start;
     padding-left: 13px;
   }
   
@@ -71,7 +73,7 @@ nav {
     font-style: normal;
     font-weight: 300;
     font-family: 'Roboto';
-    border: 1px solid #201F2E;
+    border: 1px solid transparent;
     margin: 0 4px;
   }
   
@@ -81,11 +83,11 @@ nav {
     border-radius: 32px;
   }
 
-.opacity {
-    position: absolute;
-    height: 64px;
-    left: 0;
-    bottom: -64px;
-    right: 0;
-    background: linear-gradient(180deg, #201F2E 0%, rgba(32, 31, 46, 0) 100%);
-}
+/*!*.opacity {*!*/
+/*!*    position: absolute;*!*/
+/*!*    height: 64px;*!*/
+/*!*    left: 0;*!*/
+/*!*    bottom: -64px;*!*/
+/*!*    right: 0;*!*/
+/*!*    background: linear-gradient(180deg, #201F2E 0%, rgba(32, 31, 46, 0) 100%);*!*/
+/*}*/

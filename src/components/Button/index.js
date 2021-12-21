@@ -1,13 +1,17 @@
 import './index.css';
 import flag from '../../images/flag.svg';
 import flaggrey from '../../images/flaggrey.svg';
-import {useState} from "react";
+import {useDispatch, useSelector} from "react-redux";
+import {toggleFavorite} from "../../redux/appSlice";
 
-function Button({style}) {
-  const [isFavorite, setFavorite] = useState(false);
+function Button({ style, id }) {
+  const dispatch = useDispatch();
+  const favorites = useSelector((state => state.app.favorites));
+
+  const isFavorite = favorites.includes(id);
 
   function handleFlag() {
-    setFavorite((prevState) => !prevState);
+    dispatch(toggleFavorite(id));
   }
 
   return (
