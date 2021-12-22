@@ -29,6 +29,12 @@
     line-height: 17px;
     color: #C4C1CF
   }
+
+  .footertext:active {
+    background: #120E20;
+    border: 1px solid #FF005C;
+    color: #FF005C;
+  }
   
   .footersearch {
     background: #0E0D13;
