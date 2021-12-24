@@ -18,10 +18,10 @@ export const cardArray = [
   }
 ];
 
-const cardBlackberry = {
-  id: '1',
-  img: card,
-  percents: 30,
-  title: 'Blackberry',
-  description: 'Fresh drink',
-}
+// const cardBlackberry = {
+//   id: '1',
+//   img: card,
+//   percents: 30,
+//   title: 'Blackberry',
+//   description: 'Fresh drink',
+// }
