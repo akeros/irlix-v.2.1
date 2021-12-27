@@ -2,6 +2,7 @@
     padding: 0;
   border-width: 0px;
   border-radius: 38px;
+  overflow: hidden;
 }
 
 .card {
@@ -10,6 +11,26 @@
   padding: 16px 32px 16px 32px;
   width: 320px;
   height: 421px;
+}
+
+.notResult {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 32px;
+  left: 0;
+  right: 0;
+  padding: 20px 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.07em;
+
+  color: #FFFFFF;
 }
 
 .cardblack {

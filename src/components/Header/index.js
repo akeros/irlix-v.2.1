@@ -3,6 +3,8 @@ import line from "../../line.svg";
 import Vector from "../../Vector.svg";
 import pub from "../../pub.svg";
 import {useNavigate} from 'react-router';
+import {useDispatch, useSelector} from "react-redux";
+import {setFilter} from "../../redux/appSlice";
 
 const months = [
   'Января',
@@ -18,22 +20,34 @@ const months = [
   'Декабря',
 ];
 
-function Header() {
+function Header({ title }) {
+  const dispatch = useDispatch();
+  const filterType = useSelector(state => state.app.filterType);
   const date = new Date();
   const navigate = useNavigate();
   const year = date.getFullYear();
   const day = date.getDate();
   const month = months[date.getMonth() - 1];
 
+  const isSearchVisible = useSelector((state) => state.app.isSearchVisible);
+  const cards = useSelector((state) => state.app.cards);
+
+  // собираем все фильтры и убираем повторяющиеся значения
+  const headers = Array.from(new Set(cards.map(card => card?.filters).flat()));
+
   function handleClick() {
     navigate("/")
+  }
+
+  function handleHeader(header) {
+    dispatch(setFilter(filterType !== header && header));
   }
 
   return (
     <header>
       <div className="razmet">
         <div className="wrapper">
-          <button className="text" onClick={handleClick}>Главная</button>
+          <div className="text" onClick={handleClick}>{isSearchVisible ? 'Поиск' : title}</div>
           <div className="date">{day} {month} {year}</div>
         </div>
         <div>
@@ -43,12 +57,20 @@ function Header() {
         </div>
       </div>
       <nav>
-        <button className="nav-button">Новинки</button>
-        <button className="nav-button">Сладкие</button>
-        <button className="nav-button">Хит</button>
-        <button className="nav-button">Крепкие</button>
-        <button className="nav-button">Лонг</button>
-        <button className="nav-button">Шот</button>
+        {headers.map((header) => (
+          <button
+            className={`nav-button ${header === filterType && 'nav-button-active'}`}
+            onClick={() => handleHeader(header)}
+          >
+            {header}
+          </button>
+        ))}
+        {/*<button className="nav-button">Новинки</button>*/}
+        {/*<button className="nav-button">Сладкие</button>*/}
+        {/*<button className="nav-button">Хит</button>*/}
+        {/*<button className="nav-button">Крепкие</button>*/}
+        {/*<button className="nav-button">Лонг</button>*/}
+        {/*<button className="nav-button">Шот</button>*/}
       </nav>
     </header>
 

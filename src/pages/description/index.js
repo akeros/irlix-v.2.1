@@ -5,15 +5,14 @@ import { useToast } from '../../hooks';
 import {useNavigate} from 'react-router';
 import {useEffect} from "react";
 import {useParams} from "react-router-dom";
-import {cardArray} from "../../mock/cards";
 import Button from "../../components/Button";
 import { useSelector } from "react-redux";
 
 function Description() {
   const { id } = useParams();
   const navigate = useNavigate();
-
-  const card = cardArray.find(item => item.id === id);
+  const cards = useSelector((state) => state.app.cards);
+  const card = cards.find(item => item.id === id);
 
   function handleClick() {
     navigate("/")
@@ -25,25 +24,12 @@ function Description() {
     return dot.repeat(window.innerWidth)
   }
 
-  const { renderToast, handlerToast } = useToast();
-  const favorites = useSelector((state => state.app.favorites));
-  const isFavorite = favorites.includes(id);
-
-  useEffect(() => {
-      if (isFavorite) {
-          handlerToast('Добавлено в избранное');
-      }
-  }, [isFavorite])
-
   return (
-
     <div className="wrapp">
-      {renderToast()}
       <button className="fullback" onClick={handleClick}>
         <img src={arrow}/>
       </button>
-      <div className="src">
-      </div>
+      <div className="src" style={card?.img &&{ backgroundImage: `url(${card.img})` }} />
       <div className="description-text">
         <div className="marker">
             <Button id={id} style="marker-flag" />

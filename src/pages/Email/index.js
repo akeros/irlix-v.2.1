@@ -8,14 +8,14 @@ import Footer from '../../components/Footer';
 
 function Email() {
   const favorites = useSelector((state => state.app.favorites));
-
+  const cards = useSelector((state => state.app.cards));
  
      return (
         <div className="main">
-          <Header/>
+          <Header title="Избранные" />
           <main>
             <div className="cards-list">
-              {cardArray.filter(card => favorites.includes(card.id)).map((item) => (
+              {cards.filter(card => favorites.includes(card.id)).map((item) => (
                 <Card
                   img={item.img}
                   percents={item.percents}
@@ -23,6 +23,7 @@ function Email() {
                   description={item.description}
                   key={item.id}
                   id={item.id}
+                  isEmpty={item?.isEmpty}
                 />
               ))}
             </div>

@@ -1,31 +1,33 @@
 import './index.css';
 import { useEffect, useState } from 'react';
+import {useDispatch, useSelector} from "react-redux";
+import {clearToast, showToast} from "../redux/appSlice";
 
 export const useToast = () => {
-  const [visible, setVisible] = useState(false);
-  const [title, setTitle] = useState('');
+  const dispatch = useDispatch();
+  const isToastVisible = useSelector(state => state.app.isToastVisible);
+  const toastText = useSelector(state => state.app.toastText);
 
   useEffect(() => {
-    if (visible) {
+    if (isToastVisible) {
       const timeoutId = setTimeout(() => {
-        setVisible(false);
+        dispatch(clearToast())
       }, 2000);
 
       return () => {
         clearTimeout(timeoutId);
       }
     }
-  }, [visible]);
+  }, [isToastVisible]);
 
   const handlerToast = (text) => {
-    setTitle(text);
-    setVisible(true);
+    dispatch(showToast(text))
   }
 
-  const renderToast = () => visible && (
+  const renderToast = () => isToastVisible && (
     <div className='upper-favorite'>
         <div className='upper-text'>
-            { title }
+            { toastText }
         </div>
     </div>
   )

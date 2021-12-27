@@ -22,7 +22,7 @@ header {
 .text {
     border: none;
     background: transparent;
-    padding: 32px 0 0 0;
+    padding: 32px 0 0 32px;
     /* font-family: Roboto; */
     font-style: normal;
     font-weight: bold;
@@ -79,9 +79,9 @@ nav {
     margin: 0 4px;
   }
   
-  .nav-button:hover {
+  .nav-button:hover,
+  .nav-button-active {
     border: 1px solid #C4C1CF;
-    /* box-sizing: border-box; */
     border-radius: 32px;
   }
 
