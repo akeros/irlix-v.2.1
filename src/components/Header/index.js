@@ -2,6 +2,7 @@ import './index.css';
 import line from "../../line.svg";
 import Vector from "../../Vector.svg";
 import pub from "../../pub.svg";
+import {useNavigate} from 'react-router';
 
 const months = [
   'Января',
@@ -19,16 +20,20 @@ const months = [
 
 function Header() {
   const date = new Date();
-
+  const navigate = useNavigate();
   const year = date.getFullYear();
   const day = date.getDate();
   const month = months[date.getMonth() - 1];
+
+  function handleClick() {
+    navigate("/")
+  }
 
   return (
     <header>
       <div className="razmet">
         <div className="wrapper">
-          <div className="text">Главная</div>
+          <button className="text" onClick={handleClick}>Главная</button>
           <div className="date">{day} {month} {year}</div>
         </div>
         <div>

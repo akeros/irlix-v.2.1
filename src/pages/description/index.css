@@ -95,7 +95,6 @@
         line-height: 21px;
         color: #C4C1CF;
         margin-bottom: 32px;
-        overflow-x: hidden;
     }
     
     .titlemain {
@@ -178,6 +177,525 @@
 }
 
 @media screen and (min-width: 385px) and (max-width: 768px) { 
+    .wrapp {
+        background-color: #201F2E;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+    }
+      
+    .fullback {
+        z-index: 3;
+        position: fixed;
+        width: 64px;
+        height: 64px;
+        left: 32px;
+        top: 32px;
+        background: #44414E;
+        border-radius: 16px;
+        border: none;
+    }
+    
+    .src {
+        position: fixed;
+        z-index: 0;
+        background-image: url(../../background.svg);
+        height: 100%;
+        width: 100%;
+        object-fit: fill;
+    }
+    
+    .glavgad {
+        width: 425px;
+        height: 86px;
+        left: -42px;
+        top: 84px;
+        background: #201F2E;
+        border-radius: 32px;
+    }
+    
+    .description-text {
+        border-top-right-radius: 32px;
+        background: #201F2E;
+        margin-top: 370px;
+        position: relative;
+        font-weight: 300;
+        line-height: 21px;
+        color: #C4C1CF;
+    }
+    
+    .glav {
+        padding-top: 20px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #FFFFFF
+    }
+    
+    .podglav {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        padding-bottom: 32px;
+    }
+    
+    .distruction {
+        width: 320px;
+        margin-top: 32px;
+        margin-bottom: 8px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF
+    }
+    
+    .top-bar-segment {
+        border-top: solid #C4C1CF;
+        border-top-right-radius: 32px;
+        background: #201F2E;
+        padding: 0 32px;
+        z-index: 2;
+    }
+    
+    .main-segment {
+        background: linear-gradient(180deg, #201F2E, #0E0D13);
+        position: relative;
+        padding: 0 32px 20px;
+        z-index: 1;
+    }
+    
+    .distruction-text{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        color: #C4C1CF;
+        margin-bottom: 32px;
+        overflow-x: hidden;
+    }
+    
+    .titlemain {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .titletext {
+        position: relative;
+        z-index: 2;
+        margin-top: 8px;
+        font-size: 18px;
+        font-style: normal;
+        line-height: 21px;
+        
+    }
+      /* main {
+        margin-top: 160px;
+        margin-bottom: 96px;
+      } */
+      
+    .marker {
+        position: absolute;
+        right: 0;
+        margin-right: 40px;
+        top: -4px;
+        z-index: 5;
+    }
+    
+    .marker-flag {
+        position: absolute;
+        top: -4px;
+        right: 0;
+        border: none;
+        background: transparent;
+    }
+    
+    .kriv {
+        display: none;
+    }
+    
+    .inner {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .inner-text-left {
+        position: relative;
+        background-color: #201F2E;
+        padding-right: 4px;
+    }
+    
+    .inner-text-right {
+        position: relative;
+        background-color: #201F2E;
+        padding-left: 4px;
+        text-align: right;
+    }
+    
+    .inner-dots {
+        position: absolute;
+        left: 0;
+        right: 0;
+        overflow-x: hidden;
+    }
+    
+}
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .wrapp {
+        background-color: #201F2E;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+    }
+      
+    .fullback {
+        z-index: 3;
+        position: fixed;
+        width: 64px;
+        height: 64px;
+        left: 32px;
+        top: 32px;
+        background: #44414E;
+        border-radius: 16px;
+        border: none;
+    }
+    
+    .src {
+        position: fixed;
+        z-index: 0;
+        background-image: url(../../background.svg);
+        height: 100%;
+        width: 100%;
+        object-fit: fill;
+    }
+    
+    .glavgad {
+        width: 425px;
+        height: 86px;
+        left: -42px;
+        top: 84px;
+        background: #201F2E;
+        border-radius: 32px;
+    }
+    
+    .description-text {
+        border-top-right-radius: 32px;
+        background: #201F2E;
+        margin-top: 370px;
+        position: relative;
+        font-weight: 300;
+        line-height: 21px;
+        color: #C4C1CF;
+    }
+    
+    .glav {
+        padding-top: 20px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #FFFFFF
+    }
+    
+    .podglav {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        padding-bottom: 32px;
+    }
+    
+    .distruction {
+        width: 320px;
+        margin-top: 32px;
+        margin-bottom: 8px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF
+    }
+    
+    .top-bar-segment {
+        border-top: solid #C4C1CF;
+        border-top-right-radius: 32px;
+        background: #201F2E;
+        padding: 0 32px;
+        z-index: 2;
+    }
+    
+    .main-segment {
+        background: linear-gradient(180deg, #201F2E, #0E0D13);
+        position: relative;
+        padding: 0 32px 20px;
+        z-index: 1;
+    }
+    
+    .distruction-text{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        color: #C4C1CF;
+        margin-bottom: 32px;
+        overflow-x: hidden;
+    }
+    
+    .titlemain {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .titletext {
+        position: relative;
+        z-index: 2;
+        margin-top: 8px;
+        font-size: 18px;
+        font-style: normal;
+        line-height: 21px;
+        
+    }
+      /* main {
+        margin-top: 160px;
+        margin-bottom: 96px;
+      } */
+      
+    .marker {
+        position: absolute;
+        right: 0;
+        margin-right: 40px;
+        top: -4px;
+        z-index: 5;
+    }
+    
+    .marker-flag {
+        position: absolute;
+        top: -4px;
+        right: 0;
+        border: none;
+        background: transparent;
+    }
+    
+    .kriv {
+        display: none;
+    }
+    
+    .inner {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .inner-text-left {
+        position: relative;
+        background-color: #201F2E;
+        padding-right: 4px;
+    }
+    
+    .inner-text-right {
+        position: relative;
+        background-color: #201F2E;
+        padding-left: 4px;
+        text-align: right;
+    }
+    
+    .inner-dots {
+        position: absolute;
+        left: 0;
+        right: 0;
+        overflow-x: hidden;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .wrapp {
+        background-color: #201F2E;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+    }
+      
+    .fullback {
+        z-index: 3;
+        position: fixed;
+        width: 64px;
+        height: 64px;
+        left: 32px;
+        top: 32px;
+        background: #44414E;
+        border-radius: 16px;
+        border: none;
+    }
+    
+    .src {
+        position: fixed;
+        z-index: 0;
+        background-image: url(../../background.svg);
+        height: 100%;
+        width: 100%;
+        object-fit: fill;
+    }
+    
+    .glavgad {
+        width: 425px;
+        height: 86px;
+        left: -42px;
+        top: 84px;
+        background: #201F2E;
+        border-radius: 32px;
+    }
+    
+    .description-text {
+        border-top-right-radius: 32px;
+        background: #201F2E;
+        margin-top: 370px;
+        position: relative;
+        font-weight: 300;
+        line-height: 21px;
+        color: #C4C1CF;
+    }
+    
+    .glav {
+        padding-top: 20px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        color: #FFFFFF
+    }
+    
+    .podglav {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        padding-bottom: 32px;
+    }
+    
+    .distruction {
+        width: 320px;
+        margin-top: 32px;
+        margin-bottom: 8px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF
+    }
+    
+    .top-bar-segment {
+        border-top: solid #C4C1CF;
+        border-top-right-radius: 32px;
+        background: #201F2E;
+        padding: 0 32px;
+        z-index: 2;
+    }
+    
+    .main-segment {
+        background: linear-gradient(180deg, #201F2E, #0E0D13);
+        position: relative;
+        padding: 0 32px 20px;
+        z-index: 1;
+    }
+    
+    .distruction-text{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 21px;
+        color: #C4C1CF;
+        margin-bottom: 32px;
+        overflow-x: hidden;
+    }
+    
+    .titlemain {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .titletext {
+        position: relative;
+        z-index: 2;
+        margin-top: 8px;
+        font-size: 18px;
+        font-style: normal;
+        line-height: 21px;
+        
+    }
+      /* main {
+        margin-top: 160px;
+        margin-bottom: 96px;
+      } */
+      
+    .marker {
+        position: absolute;
+        right: 0;
+        margin-right: 40px;
+        top: -4px;
+        z-index: 5;
+    }
+    
+    .marker-flag {
+        position: absolute;
+        top: -4px;
+        right: 0;
+        border: none;
+        background: transparent;
+    }
+    
+    .kriv {
+        display: none;
+    }
+    
+    .inner {
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .inner-text-left {
+        position: relative;
+        background-color: #201F2E;
+        padding-right: 4px;
+    }
+    
+    .inner-text-right {
+        position: relative;
+        background-color: #201F2E;
+        padding-left: 4px;
+        text-align: right;
+    }
+    
+    .inner-dots {
+        position: absolute;
+        left: 0;
+        right: 0;
+        overflow-x: hidden;
+    }
+    
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2560px){
     .wrapp {
         background-color: #201F2E;
         display: flex;

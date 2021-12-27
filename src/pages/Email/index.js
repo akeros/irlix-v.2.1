@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import {cardArray} from '../../mock/cards';
 import Header from '../../components/Header';
 import Card from '../../components/Card';
-import Footer from '../../components/Header';
+import Footer from '../../components/Footer';
 
 
 function Email() {
