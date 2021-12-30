@@ -273,7 +273,7 @@
         line-height: 21px;
         color: #C4C1CF;
         margin-bottom: 32px;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
     
     .titlemain {

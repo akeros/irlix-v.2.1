@@ -6,7 +6,7 @@ import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {setCards} from "../../redux/appSlice";
 
-function Main() {
+function Searching() {
   const dispatch = useDispatch();
   const cards = useSelector(state => state.app.cards);
 
@@ -53,4 +53,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default Searching;

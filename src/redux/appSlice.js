@@ -28,7 +28,7 @@ export const appSlice = createSlice({
       state.cards = filteredCards.length ? filteredCards : [{
         id: 130,
         title: 'Пусто',
-        description: 'Попробуйте изменить текст',
+        description: 'Попробуйте изменить запрос',
         img: undefined,
         filters: [],
         isEmpty: true,

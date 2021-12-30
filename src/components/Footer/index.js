@@ -18,7 +18,8 @@ function Footer() {
   const isFavoritesUrl = pathname === favoritesUrl;
 
   function show() {
-    dispatch(showSearch())
+    dispatch(showSearch() )
+    && navigate("/search")
   }
 
   function handleClick() {

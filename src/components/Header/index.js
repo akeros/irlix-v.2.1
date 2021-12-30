@@ -1,6 +1,6 @@
 import './index.css';
 import line from "../../line.svg";
-import Vector from "../../Vector.svg";
+import logo from "../../logo.svg";
 import pub from "../../pub.svg";
 import {useNavigate} from 'react-router';
 import {useDispatch, useSelector} from "react-redux";
@@ -50,11 +50,7 @@ function Header({ title }) {
           <div className="text" onClick={handleClick}>{isSearchVisible ? 'Поиск' : title}</div>
           <div className="date">{day} {month} {year}</div>
         </div>
-        <div>
-          <div className="logo-three"><img src={line}/></div>
-          <div className="logo"><img src={Vector}/></div>
-          <div className="logo-two"><img src={pub}/></div>
-        </div>
+          <div><img src={logo}/></div>
       </div>
       <nav>
         {headers.map((header) => (
