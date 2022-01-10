@@ -3,7 +3,6 @@ import { createSlice } from '@reduxjs/toolkit'
 const initialState = {
   favorites: [],
   search: '',
-  isSearchVisible: false,
   startCards: [],
   isToastVisible: false,
   toastText: '',
@@ -30,16 +29,12 @@ export const appSlice = createSlice({
         title: 'Пусто',
         description: 'Попробуйте изменить запрос',
         img: undefined,
-        filters: [],
+        filters: '',
         isEmpty: true,
       }];
     },
-    showSearch: (state) => {
-      state.isSearchVisible = true;
-    },
     clearSearch: (state) => {
       state.search = '';
-      state.isSearchVisible = false;
       state.cards = state.startCards;
     },
     setCards:  (state, { payload: cards }) => {
@@ -60,6 +55,6 @@ export const appSlice = createSlice({
   },
 })
 
-export const { toggleFavorite, searching, showSearch, clearSearch, setCards, showToast, clearToast, setFilter  } = appSlice.actions
+export const { toggleFavorite, searching, clearSearch, setCards, showToast, clearToast, setFilter  } = appSlice.actions
 
 export default appSlice.reducer

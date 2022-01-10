@@ -29,11 +29,10 @@ function Header({ title }) {
   const day = date.getDate();
   const month = months[date.getMonth()]; //- 1];
 
-  const isSearchVisible = useSelector((state) => state.app.isSearchVisible);
   const cards = useSelector((state) => state.app.cards);
 
   // собираем все фильтры и убираем повторяющиеся значения
-  const headers = Array.from(new Set(cards.map(card => card?.filters).flat()));
+  const headers = Array.from(new Set(cards.map(card => card?.type))).filter(type => type);
 
   function handleClick() {
     navigate("/")
@@ -47,7 +46,7 @@ function Header({ title }) {
     <header>
       <div className="razmet">
         <div className="wrapper">
-          <div className="text" onClick={handleClick}>{isSearchVisible ? 'Поиск' : title}</div>
+          <div className="text" onClick={handleClick}>{title}</div>
           <div className="date">{day} {month} {year}</div>
         </div>
           <div><img src={logo}/></div>
@@ -57,6 +56,7 @@ function Header({ title }) {
           <button
             className={`nav-button ${header === filterType && 'nav-button-active'}`}
             onClick={() => handleHeader(header)}
+            key={header}
           >
             {header}
           </button>

@@ -2,24 +2,20 @@ import './index.css';
 import search from '../../search.svg';
 import {useNavigate} from 'react-router';
 import Search from '../Search';
-import {useDispatch, useSelector} from "react-redux";
-import {showSearch} from "../../redux/appSlice";
 import {useLocation} from "react-router-dom";
 
 const favoritesUrl = '/favorites';
+const searchUrl = '/search';
 
 function Footer() {
   const navigate = useNavigate();
-  const dispatch = useDispatch();
   const { pathname } = useLocation();
 
-  const isSearchVisible = useSelector(state => state.app.isSearchVisible);
-
   const isFavoritesUrl = pathname === favoritesUrl;
+  const isSearchUrl = pathname === searchUrl;
 
   function show() {
-    dispatch(showSearch() )
-    && navigate("/search")
+    navigate("/search");
   }
 
   function handleClick() {
@@ -28,7 +24,7 @@ function Footer() {
 
   return (
     <div className="footer">
-      {isSearchVisible
+      {isSearchUrl
         ? <Search />
         : (
           <>

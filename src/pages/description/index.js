@@ -3,16 +3,19 @@ import kriv from '../../kriv.svg';
 import './index.css';
 import { useToast } from '../../hooks';
 import {useNavigate} from 'react-router';
-import {useEffect} from "react";
+import {useEffect, useRef} from "react";
 import {useParams} from "react-router-dom";
 import Button from "../../components/Button";
-import { useSelector } from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
+import {setCards} from "../../redux/appSlice";
 
 function Description() {
+  const dispatch = useDispatch();
   const { id } = useParams();
   const navigate = useNavigate();
   const cards = useSelector((state) => state.app.cards);
   const card = cards.find(item => item.id === id);
+  const ref = useRef();
 
   function handleClick() {
     navigate("/")
@@ -21,11 +24,33 @@ function Description() {
   const dot = '.';
 
   function drawDots() {
-    return dot.repeat(window.innerWidth)
+    return dot.repeat(ref?.current?.offsetWidth)
+  }
+
+  useEffect(async () => {
+    if (!card?.img) {
+      try {
+        const response = await fetch('https://61c9d20d20ac1c0017ed8ea7.mockapi.io/api/v1/cards');
+
+        if (response.ok) {
+          const data = await response.json();
+
+          dispatch(setCards(data || []));
+        } else {
+          console.error("Ошибка HTTP: " + response.status);
+        }
+      } catch (e) {
+        console.error(e);
+      }
+    }
+  }, [card]);
+
+  if (!card?.img) {
+    return null;
   }
 
   return (
-    <div className="wrapp">
+    <div className="wrapp" ref={ref}>
       <button className="fullback" onClick={handleClick}>
         <img src={arrow}/>
       </button>

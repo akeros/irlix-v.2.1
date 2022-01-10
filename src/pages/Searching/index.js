@@ -10,6 +10,8 @@ import {setCards} from "../../redux/appSlice";
 function Searching() {
   const dispatch = useDispatch();
   const cards = useSelector(state => state.app.cards);
+  const search = useSelector(state => state.app.search);
+  const filterType = useSelector(state => state.app.filterType);
 
   useEffect(async () => {
     await getData();
@@ -36,18 +38,21 @@ function Searching() {
       <Header title="Поиск" />
       <main>
         <div className="cards-list">
-          <CardSearch/>
-          {/* {cards?.map((item) => (
-            <Card
-              img={item.img}
-              percents={item.percents}
-              title={item.title}
-              description={item.description}
-              key={item.id}
-              id={item.id}
-              isEmpty={item?.isEmpty}
-            />
-          ))} */}
+          {
+            search
+            ? cards?.filter(card => !filterType || card?.type === filterType)?.map((item) => (
+                <Card
+                  img={item.img}
+                  percents={item.percents}
+                  title={item.title}
+                  description={item.description}
+                  key={item.id}
+                  id={item.id}
+                  isEmpty={item?.isEmpty}
+                />
+              ))
+            : <CardSearch/>
+          }
         </div>
       </main>
         <Footer/>

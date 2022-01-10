@@ -9,6 +9,7 @@ import {setCards} from "../../redux/appSlice";
 function Main() {
   const dispatch = useDispatch();
   const cards = useSelector(state => state.app.cards);
+  const filterType = useSelector(state => state.app.filterType);
 
   useEffect(async () => {
     await getData();
@@ -35,7 +36,7 @@ function Main() {
       <Header title="Главная" />
       <main>
         <div className="cards-list">
-          {cards?.map((item) => (
+          {cards?.filter(card => !filterType || card?.type === filterType)?.map((item) => (
             <Card
               img={item.img}
               percents={item.percents}

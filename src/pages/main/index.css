@@ -3,6 +3,8 @@
     display: flex;
     width: 100%;
     height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
     flex-direction: column;
     position: relative;
   }
@@ -68,8 +70,25 @@
     flex-direction: column;
     margin: 1040px 50px 25px 65px;
   }
-  
-  
+
+@media screen and (min-width: 100px) and (max-width: 385px) {
+  .card {
+    padding: 16px 0;
+    margin: 0 auto;
+  }
+
+  .cardblack {
+    left: 15px;
+  }
+
+  .flag {
+    right: 30px;
+  }
+
+  .cardrazmett {
+    left: 32px;
+  }
+}
   /* @media screen and (max-width: 767px ) {
     .main {
   
