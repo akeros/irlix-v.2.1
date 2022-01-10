@@ -29,7 +29,9 @@ function Description() {
       <button className="fullback" onClick={handleClick}>
         <img src={arrow}/>
       </button>
-      <div className="src" style={card?.img &&{ backgroundImage: `url(${card.img})` }} />
+      <div className="src">
+          <img className="img" src={card.img}/>
+      </div>
       <div className="description-text">
         <div className="marker">
             <Button id={id} style="marker-flag" />

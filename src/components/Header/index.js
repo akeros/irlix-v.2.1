@@ -27,7 +27,7 @@ function Header({ title }) {
   const navigate = useNavigate();
   const year = date.getFullYear();
   const day = date.getDate();
-  const month = months[date.getMonth() - 1];
+  const month = months[date.getMonth()]; //- 1];
 
   const isSearchVisible = useSelector((state) => state.app.isSearchVisible);
   const cards = useSelector((state) => state.app.cards);

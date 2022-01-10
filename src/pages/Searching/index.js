@@ -1,6 +1,7 @@
 import Card from '../../components/Card/index';
 import Header from '../../components/Header/index';
 import Footer from '../../components/Footer/index';
+import CardSearch from '../../components/CardSearch/index';
 import './index.css';
 import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
@@ -32,10 +33,11 @@ function Searching() {
 
   return (
     <div className="main">
-      <Header title="Главная" />
+      <Header title="Поиск" />
       <main>
         <div className="cards-list">
-          {cards?.map((item) => (
+          <CardSearch/>
+          {/* {cards?.map((item) => (
             <Card
               img={item.img}
               percents={item.percents}
@@ -45,7 +47,7 @@ function Searching() {
               id={item.id}
               isEmpty={item?.isEmpty}
             />
-          ))}
+          ))} */}
         </div>
       </main>
         <Footer/>
