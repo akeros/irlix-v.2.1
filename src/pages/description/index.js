@@ -1,9 +1,8 @@
 import arrow from '../../arrow.svg';
 import kriv from '../../kriv.svg';
 import './index.css';
-import { useToast } from '../../hooks';
 import {useNavigate} from 'react-router';
-import {useEffect, useRef} from "react";
+import {useEffect, useRef, useState, useLayoutEffect} from "react";
 import {useParams} from "react-router-dom";
 import Button from "../../components/Button";
 import {useDispatch, useSelector} from "react-redux";
@@ -21,11 +20,21 @@ function Description() {
     navigate("/")
   }
 
+  const [length, setLength] = useState();
+
+  useEffect(() => {
+    if (ref?.current?.offsetWidth) {
+      setLength(ref.current.offsetWidth);
+    } else {
+      setTimeout(() => setLength({}), 0)}
+  }, [length]);
+
   const dot = '.';
 
   function drawDots() {
-    return dot.repeat(ref?.current?.offsetWidth)
+    return dot.repeat(length)
   }
+
 
   useEffect(async () => {
     if (!card?.img) {
