@@ -5,12 +5,13 @@
   overflow: hidden;
 }
 
-.card {
+.cardSearch {
   display: flex;
   position: relative;
   padding: 16px 32px 16px 32px;
   width: 320px;
   height: 421px;
+  margin: 0 auto;
 }
 
 .notResult {

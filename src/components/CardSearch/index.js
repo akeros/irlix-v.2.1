@@ -1,11 +1,11 @@
 import './index.css';
-import empty from '../../empty.svg'
+import empty from '../../empty.png'
 
 function CardSearch() {
     return (
-        <div className="card">
-          <button className="style"><img src={empty}/></button>
-         <div className="notResult">Начинайте вводить</div>
+        <div className="cardSearch">
+          <div className="style"><img src={empty}/></div>
+            <div className="notResult">Начинайте вводить</div>
           <div className="cardrazmett">
           </div>
         </div>
