@@ -20,18 +20,18 @@ const months = [
   'Декабря',
 ];
 
-function Header({ title }) {
+const Header = ({title}) => {
   const dispatch = useDispatch();
   const filterType = useSelector(state => state.app.filterType);
   const date = new Date();
   const navigate = useNavigate();
   const year = date.getFullYear();
   const day = date.getDate();
-  const month = months[date.getMonth()]; //- 1];
+  const month = months[date.getMonth()];
 
   const cards = useSelector((state) => state.app.cards);
 
-  // собираем все фильтры и убираем повторяющиеся значения
+  // collect all filters and remove duplicate values
   const headers = Array.from(new Set(cards.map(card => card?.type))).filter(type => type);
 
   function handleClick() {
@@ -61,12 +61,6 @@ function Header({ title }) {
             {header}
           </button>
         ))}
-        {/*<button className="nav-button">Новинки</button>*/}
-        {/*<button className="nav-button">Сладкие</button>*/}
-        {/*<button className="nav-button">Хит</button>*/}
-        {/*<button className="nav-button">Крепкие</button>*/}
-        {/*<button className="nav-button">Лонг</button>*/}
-        {/*<button className="nav-button">Шот</button>*/}
       </nav>
     </header>
 

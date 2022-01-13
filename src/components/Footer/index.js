@@ -7,7 +7,7 @@ import {useLocation} from "react-router-dom";
 const favoritesUrl = '/favorites';
 const searchUrl = '/search';
 
-function Footer() {
+const Footer = () =>  {
   const navigate = useNavigate();
   const { pathname } = useLocation();
 

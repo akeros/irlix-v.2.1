@@ -23,6 +23,7 @@
         background: #44414E;
         border-radius: 16px;
         border: none;
+        box-sizing: border-box;
     }
     
     .src {
@@ -80,7 +81,6 @@
     
     .top-bar-segment {
         border-top-right-radius: 32px;
-        /*overflow: hidden;*/
         background: linear-gradient(to bottom, #201F2E 80%, #0E0D13  50%);
         padding: 0 32px;
         position: relative;
@@ -124,11 +124,7 @@
         line-height: 21px;
         
     }
-      /* main {
-        margin-top: 160px;
-        margin-bottom: 96px;
-      } */
-      
+
     .marker {
         position: absolute;
         right: 0;
@@ -147,7 +143,6 @@
     
     .kriv {
         position: absolute;
-        /*margin-top: 586px;*/
         bottom: -53px;
         left: 0;
         z-index: 1;
@@ -207,6 +202,7 @@
         background: #44414E;
         border-radius: 16px;
         border: none;
+        box-sizing: border-box;
     }
     
     .src {
@@ -284,7 +280,6 @@
         line-height: 21px;
         color: #C4C1CF;
         margin-bottom: 32px;
-        /* overflow-x: hidden; */
     }
     
     .titlemain {
@@ -306,11 +301,7 @@
         line-height: 21px;
         
     }
-      /* main {
-        margin-top: 160px;
-        margin-bottom: 96px;
-      } */
-      
+
     .marker {
         position: absolute;
         right: 0;
@@ -384,6 +375,7 @@
         background: #44414E;
         border-radius: 16px;
         border: none;
+        box-sizing: border-box;
     }
     
     .src {
@@ -482,11 +474,7 @@
         line-height: 21px;
         
     }
-      /* main {
-        margin-top: 160px;
-        margin-bottom: 96px;
-      } */
-      
+  
     .marker {
         position: absolute;
         right: 0;
@@ -560,6 +548,7 @@
         background: #44414E;
         border-radius: 16px;
         border: none;
+        box-sizing: border-box;
     }
     
     .src {
@@ -658,11 +647,7 @@
         line-height: 21px;
         
     }
-      /* main {
-        margin-top: 160px;
-        margin-bottom: 96px;
-      } */
-      
+
     .marker {
         position: absolute;
         right: 0;
@@ -730,6 +715,7 @@
         background: #44414E;
         border-radius: 16px;
         border: none;
+        box-sizing: border-box;
     }
     
     .src {
@@ -834,11 +820,7 @@
         line-height: 21px;
         
     }
-      /* main {
-        margin-top: 160px;
-        margin-bottom: 96px;
-      } */
-      
+
     .marker {
         position: absolute;
         right: 0;

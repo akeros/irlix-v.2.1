@@ -14,10 +14,10 @@ export const appSlice = createSlice({
   name: 'app',
   initialState,
   reducers: {
-    toggleFavorite: (state, { payload: id }) => { // id это то что мы отпрааляем в (экшн(диспатч) туглфаворит)
-      state.favorites = state.favorites.includes(id) // Условие
-        ? state.favorites.filter((value) => value !== id) // если true
-        : [...state.favorites, id]  // если false
+    toggleFavorite: (state, { payload: id }) => { // id then what we send to (action (dispatch) togglefavorite
+      state.favorites = state.favorites.includes(id) // Condition
+        ? state.favorites.filter((value) => value !== id) // if true
+        : [...state.favorites, id]  // if false
     },
     searching: (state, { payload: search }) => {
       state.search = search;

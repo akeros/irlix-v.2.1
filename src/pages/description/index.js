@@ -2,7 +2,7 @@ import arrow from '../../arrow.svg';
 import kriv from '../../kriv.svg';
 import './index.css';
 import {useNavigate} from 'react-router';
-import {useEffect, useRef, useState, useLayoutEffect} from "react";
+import {useEffect, useRef, useState } from "react";
 import {useParams} from "react-router-dom";
 import Button from "../../components/Button";
 import {useDispatch, useSelector} from "react-redux";
@@ -15,11 +15,7 @@ function Description() {
   const cards = useSelector((state) => state.app.cards);
   const card = cards.find(item => item.id === id);
   const ref = useRef();
-
-  function handleClick() {
-    navigate("/")
-  }
-
+  
   const [length, setLength] = useState();
 
   useEffect(() => {
@@ -30,12 +26,15 @@ function Description() {
   }, [length]);
 
   const dot = '.';
-
-  function drawDots() {
+   
+  const drawDots = () => {
     return dot.repeat(length)
   }
 
-
+  function handleClick() {
+    navigate("/")
+  }
+  
   useEffect(async () => {
     if (!card?.img) {
       try {

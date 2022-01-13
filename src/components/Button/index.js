@@ -5,7 +5,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {toggleFavorite} from "../../redux/appSlice";
 import {useToast} from "../../hooks";
 
-function Button({ style, id }) {
+  const Button = ({ style, id}) => {
   const dispatch = useDispatch();
   const favorites = useSelector((state => state.app.favorites));
 
@@ -13,7 +13,7 @@ function Button({ style, id }) {
 
   const { handlerToast } = useToast();
 
-  function handleFlag() {
+  function favoriteClick() {
     if (!isFavorite) {
       handlerToast('Добавлено в избранное');
     }
@@ -21,7 +21,7 @@ function Button({ style, id }) {
   }
 
   return (
-      <button className={style} onClick={handleFlag}>
+      <button className={style} onClick={favoriteClick}>
         <img src={isFavorite ? flag : flaggrey}/>
       </button>
   );

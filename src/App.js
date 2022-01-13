@@ -18,7 +18,6 @@ const App = () => {
           <Route path="/description/:id" element={<Description />} />
           <Route path="/favorites" element={<Email />} />
           <Route path="/search" element={<Searching />} />
-        {/* <Route path="/step-four" element={<MainOne />} /> */}
         </Routes>
       </Router>
       {renderToast()}

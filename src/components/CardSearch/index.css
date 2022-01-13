@@ -3,6 +3,7 @@
   border-width: 0px;
   border-radius: 38px;
   overflow: hidden;
+  width: 100%;
 }
 
 .cardSearch {
@@ -29,7 +30,6 @@
   font-size: 24px;
   line-height: 28px;
   text-align: center;
-  letter-spacing: 0.07em;
 
   color: #FFFFFF;
 }
@@ -44,7 +44,7 @@
   background-color: #0E0D13;
   border-radius: 24px;
   top: 32px;
-  left: 47px;
+  left: 30px;
   padding: 20px 10px;
 }
 
@@ -61,20 +61,17 @@
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
-  /*line-height: 16px;*/
   color: #C4C1CF;
-  /*margin: 50px 0 0 5px;*/
 }
 
 .cardrazmett {
   position: absolute;
-  left: 64px;
+  left: 35px;
   right: 0;
   bottom: 45px;
 }
 
 .cardtextt {
-  width: 132px;
   left: 32px;
   top: 83.29%;
   bottom: 10.12%;
@@ -82,14 +79,13 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
-  letter-spacing: 0.07em;
   color: #FFFFFF;
 }
 
 .flag {
   position: absolute;
-  top: 10px;
-  right: 62px;
+  top: -8px;
+  right: 40px;
   border: none;
   background: transparent;
 }
