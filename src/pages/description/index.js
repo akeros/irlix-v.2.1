@@ -5,10 +5,51 @@ import {useNavigate} from 'react-router';
 import {useEffect, useRef, useState } from "react";
 import {useParams} from "react-router-dom";
 import Button from "../../components/Button";
+import DrinkDescription from "../../components/DrinkDescription";
 import {useDispatch, useSelector} from "react-redux";
 import {setCards} from "../../redux/appSlice";
 
+
+
 function Description() {
+  const ingredients = [
+    {
+      title: 'Джин',
+      value: 40 ,
+      valueType: 'мл', 
+    },
+    {
+      title: 'Шнапс',
+      value: 10 ,
+      valueType: 'мл', 
+    },
+    {
+      title: 'Ликёр',
+      value: 25 ,
+      valueType: 'мл', 
+    },
+    {
+      title: 'Сок',
+      value: 25 ,
+      valueType: 'мл', 
+    },
+    {
+      title: 'Жасмин',
+      value: 15 ,
+      valueType: 'мл', 
+    },
+    {
+      title: 'Ежевика',
+      value: 2 ,
+      valueType: 'шт', 
+    },
+    {
+      title: 'Белок',
+      value: 20 ,
+      valueType: 'мл', 
+    },
+  ];
+
   const dispatch = useDispatch();
   const { id } = useParams();
   const navigate = useNavigate();
@@ -75,34 +116,11 @@ function Description() {
           <div className="distruction">Ингредиенты</div>
           <div className="distruction-text">
             <div className='kriv'><img src={kriv}/></div>
-            <div className="inner">
-              <div className="inner-dots">{`Джин\u00A0${drawDots()}`}</div>
-              <div className="inner-text-right">40 мл</div>
-            </div>
-            <div className="inner">
-              <div className="inner-dots">{`Шнапс\u00A0яблоко\u00A0${drawDots()}`}</div>
-              <div className="inner-text-right">10 мл</div>
-            </div>
-            <div className="inner">
-              <div className="inner-dots">{`Ликёр\u00A0кассис\u00A0${drawDots()}`}</div>
-              <div className="inner-text-right">25 мл</div>
-            </div>
-            <div className="inner">
-              <div className="inner-dots">{`Сок\u00A0лимона\u00A0${drawDots()}`}</div>
-              <div className="inner-text-right">25 мл</div>
-            </div>
-            <div className="inner">
-              <div className="inner-dots">{`Жасмин\u00A0лемонграсс\u00A0${drawDots()}`}</div>
-              <div className="inner-text-right">15 мл</div>
-            </div>
-            <div className="inner">
-              <div className="inner-dots">{`Ежевика\u00A0свежая\u00A0${drawDots()}`}</div>
-              <div className="inner-text-right">2 шт</div>
-            </div>
-            <div className="inner">
-              <div className="inner-dots">{`Белок\u00A0${drawDots()}`}</div>
-              <div className="inner-text-right">20 мл</div>
-            </div>
+            {ingredients.map(ingredients => (
+              <DrinkDescription 
+              {...ingredients}
+              dots={drawDots}/>
+              ))}
           </div>
         </div>
         <div className="main-segment">
