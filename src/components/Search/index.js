@@ -1,6 +1,6 @@
 import './index.css';
 import {useDispatch, useSelector} from "react-redux";
-import cancel from '../../images/cancel.svg';
+import cancel from '@images/cancel.svg'
 import {clearSearch, searching,} from "../../redux/appSlice";
 import {useNavigate} from "react-router";
 

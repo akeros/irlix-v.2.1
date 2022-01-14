@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "noEmit": true,
+    "jsx": "react",
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "removeComments": true,
+    "baseUrl": "./",
+    "paths": {
+      "@images/*": ["./src/images/*"],
+      "@background/*": ["./background/*"],
+      "@card/*": ["./card/*"],
+      "@empty/*": ["./empty/*"],
+      "@components/*": ["./src/components/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@modules/*": ["./src/reducers/*"],
+      "@assets/*": ["./assets/*"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

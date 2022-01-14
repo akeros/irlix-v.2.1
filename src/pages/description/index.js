@@ -1,5 +1,5 @@
-import arrow from '../../arrow.svg';
-import kriv from '../../kriv.svg';
+import arrow from '@images/arrow.svg'
+import kriv from '@images/kriv.svg'
 import './index.css';
 import {useNavigate} from 'react-router';
 import {useEffect, useRef, useState } from "react";

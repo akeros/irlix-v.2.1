@@ -1,5 +1,5 @@
 import './index.css';
-import search from '../../search.svg';
+import search from '@images/search.svg'
 import {useNavigate} from 'react-router';
 import Search from '../Search';
 import {useLocation} from "react-router-dom";

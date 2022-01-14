@@ -1,7 +1,5 @@
 import './index.css';
-import line from "../../line.svg";
-import logo from "../../logo.svg";
-import pub from "../../pub.svg";
+import logo from '@images/logo.svg'
 import {useNavigate} from 'react-router';
 import {useDispatch, useSelector} from "react-redux";
 import {setFilter} from "../../redux/appSlice";

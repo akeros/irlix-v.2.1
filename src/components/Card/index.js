@@ -1,7 +1,7 @@
 import './index.css';
 import Button from '../Button';
 import {useNavigate} from 'react-router';
-import empty from '../../empty.png'
+import empty from '@images/empty.png';
 
 const Card = ({img, percents, title, description, id, isEmpty}) => {
   const navigate = useNavigate();
