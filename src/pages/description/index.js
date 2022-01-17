@@ -4,10 +4,13 @@ import './index.css';
 import {useNavigate} from 'react-router';
 import {useEffect, useRef, useState } from "react";
 import {useParams} from "react-router-dom";
-import Button from "../../components/Button";
-import DrinkDescription from "../../components/DrinkDescription";
+import Button from "@components/Button";
+import DrinkDescription from "@components/DrinkDescription";
 import {useDispatch, useSelector} from "react-redux";
-import {setCards} from "../../redux/appSlice";
+import {setCards, toggleFavorite} from "@redux/appSlice";
+import {getCards} from "@api";
+import {baseUrl} from "@utils/routes";
+import {useToast} from "../../hooks";
 
 
 
@@ -59,6 +62,19 @@ function Description() {
   
   const [length, setLength] = useState();
 
+  const favorites = useSelector((state => state.app.favorites));
+
+  const isFavorite = favorites.includes(id);
+
+  const { handlerToast } = useToast();
+
+  const favoriteClick = () => {
+    if (!isFavorite) {
+      handlerToast('Добавлено в избранное');
+    }
+    dispatch(toggleFavorite(id));
+  };
+
   useEffect(() => {
     if (ref?.current?.offsetWidth) {
       setLength(ref.current.offsetWidth);
@@ -73,24 +89,13 @@ function Description() {
   }
 
   const handleClick = () => {
-    navigate("/")
+    navigate(baseUrl)
   }
   
   useEffect(async () => {
     if (!card?.img) {
-      try {
-        const response = await fetch('https://61c9d20d20ac1c0017ed8ea7.mockapi.io/api/v1/cards');
-
-        if (response.ok) {
-          const data = await response.json();
-
-          dispatch(setCards(data || []));
-        } else {
-          console.error("Ошибка HTTP: " + response.status);
-        }
-      } catch (e) {
-        console.error(e);
-      }
+      const cards = await getCards();
+      dispatch(setCards(cards));
     }
   }, [card]);
 
@@ -108,7 +113,7 @@ function Description() {
       </div>
       <div className="description-text">
         <div className="marker">
-            <Button id={id} style="marker-flag" />
+            <Button style="marker-flag" onClick={favoriteClick} isFavorite={isFavorite} />
         </div>
         <div className="top-bar-segment">
           <div className="glav">{card.title}</div>

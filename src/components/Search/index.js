@@ -1,8 +1,9 @@
 import './index.css';
 import {useDispatch, useSelector} from "react-redux";
 import cancel from '@images/cancel.svg'
-import {clearSearch, searching,} from "../../redux/appSlice";
+import {clearSearch, searching,} from "@redux/appSlice";
 import {useNavigate} from "react-router";
+import {baseUrl} from "@utils/routes";
 
 const Search = () => {
   const dispatch = useDispatch();
@@ -17,7 +18,7 @@ const Search = () => {
     if (value) {
       dispatch(clearSearch());
     } else {
-      navigate('/');
+      navigate(baseUrl);
     }
   }
 

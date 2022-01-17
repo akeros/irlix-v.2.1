@@ -327,6 +327,10 @@ module.exports = function (webpackEnv) {
         .filter(ext => useTypeScript || !ext.includes('ts')),
       alias: {
         '@images': path.join(__dirname, '../src/images'),
+        '@components': path.join(__dirname, '../src/components'),
+        '@api': path.join(__dirname, '../src/api'),
+        '@redux': path.join(__dirname, '../src/redux'),
+        '@utils': path.join(__dirname, '../src/utils'),
         '@background': path.join(__dirname, '../background'),
         '@card': path.join(__dirname, '../card'),
         '@empty': path.join(__dirname, '../empty'),
