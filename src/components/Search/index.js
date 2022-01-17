@@ -9,11 +9,11 @@ const Search = () => {
   const navigate = useNavigate();
   const value = useSelector(state => state.app.search);
 
-  function handleChange(event) {
+  const handleChange = (event) => {
     dispatch(searching(event.target.value));
   }
 
-  function handleClear() {
+  const handleClear= () => {
     if (value) {
       dispatch(clearSearch());
     } else {

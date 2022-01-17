@@ -14,11 +14,11 @@ const Footer = () =>  {
   const isFavoritesUrl = pathname === favoritesUrl;
   const isSearchUrl = pathname === searchUrl;
 
-  function show() {
+  const show = () => {
     navigate("/search");
   }
 
-  function handleClick() {
+  const handleClick = () => {
     navigate(isFavoritesUrl ? '/' : favoritesUrl)
   }
 

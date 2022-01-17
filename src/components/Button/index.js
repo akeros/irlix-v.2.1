@@ -13,12 +13,12 @@ import {useToast} from "../../hooks";
 
   const { handlerToast } = useToast();
 
-  function favoriteClick() {
+  const favoriteClick = () => {
     if (!isFavorite) {
       handlerToast('Добавлено в избранное');
     }
     dispatch(toggleFavorite(id));
-  }
+  };
 
   return (
       <button className={style} onClick={favoriteClick}>

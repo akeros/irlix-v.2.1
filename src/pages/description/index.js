@@ -72,7 +72,7 @@ function Description() {
     return dot.repeat(length)
   }
 
-  function handleClick() {
+  const handleClick = () => {
     navigate("/")
   }
   

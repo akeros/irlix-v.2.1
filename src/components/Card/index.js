@@ -6,7 +6,7 @@ import empty from '@images/empty.png';
 const Card = ({img, percents, title, description, id, isEmpty}) => {
   const navigate = useNavigate();
 
-  function handleClick() {
+  const handleClick = () => {
     navigate(`/description/${id}`)
   }
 

@@ -32,11 +32,11 @@ const Header = ({title}) => {
   // collect all filters and remove duplicate values
   const headers = Array.from(new Set(cards.map(card => card?.type))).filter(type => type);
 
-  function handleClick() {
+  const handleClick = () => {
     navigate("/")
   }
 
-  function handleHeader(header) {
+  const handleHeader= (header) => {
     dispatch(setFilter(filterType !== header && header));
   }
 
