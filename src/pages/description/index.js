@@ -105,21 +105,21 @@ function Description() {
 
   return (
     <div className="wrapp" ref={ref}>
-      <button className="fullback" onClick={handleClick}>
+      <button className="wrapp__fullback" onClick={handleClick}>
         <img src={arrow}/>
       </button>
       <div className="src">
-          <img className="img" src={card.img}/>
+          <img className="src__img" src={card.img}/>
       </div>
       <div className="description-text">
-        <div className="marker">
+        <div className="description-text__marker">
             <Button style="marker-flag" onClick={favoriteClick} isFavorite={isFavorite} />
         </div>
         <div className="top-bar-segment">
-          <div className="glav">{card.title}</div>
-          <div className="podglav-text">{card.description}</div>
-          <div className="distruction">Ингредиенты</div>
-          <div className="distruction-text">
+          <div className="top-bar-segment__over">{card.title}</div>
+          <div className="top-bar-segment__text">{card.description}</div>
+          <div className="top-bar-segment__distruction">Ингредиенты</div>
+          <div className="top-bar-segment__distruction-text">
             <div className='kriv'><img src={kriv}/></div>
             {ingredients.map(ingredients => (
               <DrinkDescription 
@@ -129,8 +129,8 @@ function Description() {
           </div>
         </div>
         <div className="main-segment">
-          <div className="titlemain">Как готовить</div>
-          <div className="titletext">Ежевику (одну штуку) размять в шейкере, засыпать лёд на 2/3 шейкера.
+          <div className="main-segment__title">Как готовить</div>
+          <div className="main-segment__title-text">Ежевику (одну штуку) размять в шейкере, засыпать лёд на 2/3 шейкера.
             Добавить джин, шнапс, ликёр, сок, жасмин лемонграсс и белок.
             Тщательно взбить и процедить в бокал.
             Украсить ежевикой.

@@ -55,10 +55,10 @@ const Header = () => {
 
   return (
     <header>
-      <div className="razmet">
-        <div className="wrapper">
-          <div className="text" onClick={handleClick}>{title}</div>
-          <div className="date">{day} {month} {year}</div>
+      <div className="table">
+        <div className="table-wrapper">
+          <div className="table-wrapper-text" onClick={handleClick}>{title}</div>
+          <div className="table-wrapper-date">{day} {month} {year}</div>
         </div>
           <div><img src={logo}/></div>
       </div>

@@ -2,8 +2,6 @@ import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 
 import Card from '@components/Card/index';
-import Header from '@components/Header/index';
-import Footer from '@components/Footer/index';
 import {getCards} from "@api";
 import {setCards} from "@redux/appSlice";
 

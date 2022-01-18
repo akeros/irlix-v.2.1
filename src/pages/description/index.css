@@ -1,6 +1,6 @@
 @media screen and (min-width: 100px) and (max-width: 385px) {
 
-    .img {
+    .src__img {
         width: 100%;
         height: 400px;
         object-fit: cover;
@@ -13,7 +13,7 @@
         overflow: auto;
     }
       
-    .fullback {
+    .wrapp__fullback {
         z-index: 3;
         position: fixed;
         width: 64px;
@@ -52,7 +52,7 @@
         color: #C4C1CF;
     }
     
-    .glav {
+    .top-bar-segment__over {
         padding-top: 20px;
         font-style: normal;
         font-weight: bold;
@@ -61,14 +61,14 @@
         color: #FFFFFF
     }
     
-    .podglav {
+    .top-bar-segment__text {
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
         padding-bottom: 32px;
     }
     
-    .distruction {
+    .top-bar-segment__distruction {
         width: 320px;
         margin-top: 32px;
         margin-bottom: 8px;
@@ -94,7 +94,7 @@
         z-index: 1;
     }
     
-    .distruction-text{
+    .top-bar-segment__distruction-text{
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
@@ -103,7 +103,7 @@
         margin-bottom: 32px;
     }
     
-    .titlemain {
+    .main-segment__title {
         font-style: normal;
         font-weight: bold;
         font-size: 18px;
@@ -113,7 +113,7 @@
         z-index: 2;
     }
     
-    .titletext {
+    .main-segment__title-text {
         position: relative;
         z-index: 2;
         width: 300px;
@@ -125,7 +125,7 @@
         
     }
 
-    .marker {
+    .description-text__marker {
         position: absolute;
         right: 0;
         margin-right: 40px;
@@ -147,39 +147,11 @@
         left: 0;
         z-index: 1;
     }
-    
-    .inner {
-        display: flex;
-        justify-content: flex-end;
-        position: relative;
-        z-index: 2;
-    }
-    
-    .inner-text-left {
-        position: relative;
-        background-color: #201F2E;
-        padding-right: 4px;
-    }
-    
-    .inner-text-right {
-        position: relative;
-        background-color: #201F2E;
-        padding-left: 4px;
-        text-align: right;
-    }
-    
-    .inner-dots {
-        position: absolute;
-        left: 0;
-        right: 0;
-        overflow-x: hidden;
-    }
-    
 }
 
 @media screen and (min-width: 385px) and (max-width: 769px) { 
 
-    .img {
+    .src__img {
         width: 100%;
         height: 400px;
         object-fit: cover;
@@ -192,7 +164,7 @@
         overflow: auto;
     }
       
-    .fullback {
+    .wrapp__fullback {
         z-index: 3;
         position: fixed;
         width: 64px;
@@ -232,7 +204,7 @@
         color: #C4C1CF;
     }
     
-    .glav {
+    .top-bar-segment__over {
         padding-top: 20px;
         font-style: normal;
         font-weight: bold;
@@ -241,14 +213,14 @@
         color: #FFFFFF
     }
     
-    .podglav {
+    .top-bar-segment__text {
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
         padding-bottom: 32px;
     }
     
-    .distruction {
+    .top-bar-segment__distruction {
         width: 320px;
         margin-top: 32px;
         margin-bottom: 8px;
@@ -273,7 +245,7 @@
         z-index: 1;
     }
     
-    .distruction-text{
+    .top-bar-segment__distruction-text{
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
@@ -282,7 +254,7 @@
         margin-bottom: 32px;
     }
     
-    .titlemain {
+    .main-segment__title {
         font-style: normal;
         font-weight: bold;
         font-size: 18px;
@@ -292,7 +264,7 @@
         z-index: 2;
     }
     
-    .titletext {
+    .main-segment__title-text {
         position: relative;
         z-index: 2;
         margin-top: 8px;
@@ -302,7 +274,7 @@
         
     }
 
-    .marker {
+    .description-text__marker {
         position: absolute;
         right: 0;
         margin-right: 40px;
@@ -321,39 +293,11 @@
     .kriv {
         display: none;
     }
-    
-    .inner {
-        display: flex;
-        justify-content: flex-end;
-        position: relative;
-        z-index: 2;
-    }
-    
-    .inner-text-left {
-        position: relative;
-        background-color: #201F2E;
-        padding-right: 4px;
-    }
-    
-    .inner-text-right {
-        position: relative;
-        background-color: #201F2E;
-        padding-left: 4px;
-        text-align: right;
-    }
-    
-    .inner-dots {
-        position: absolute;
-        left: 0;
-        right: 0;
-        overflow-x: hidden;
-    }
-    
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 
-    .img {
+    .src__img {
         width: 100%;
         height: 400px;
         object-fit: cover;
@@ -365,7 +309,7 @@
         overflow: auto;
     }
       
-    .fullback {
+    .wrapp__fullback {
         z-index: 3;
         position: fixed;
         width: 64px;
@@ -405,7 +349,7 @@
         color: #C4C1CF;
     }
     
-    .glav {
+    .top-bar-segment__over {
         padding-top: 20px;
         font-style: normal;
         font-weight: bold;
@@ -414,14 +358,14 @@
         color: #FFFFFF
     }
     
-    .podglav {
+    .top-bar-segment__text {
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
         padding-bottom: 32px;
     }
     
-    .distruction {
+    .top-bar-segment__distruction {
         width: 320px;
         margin-top: 32px;
         margin-bottom: 8px;
@@ -446,7 +390,7 @@
         z-index: 1;
     }
     
-    .distruction-text{
+    .top-bar-segment__distruction-text{
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
@@ -455,7 +399,7 @@
         margin-bottom: 32px;
     }
     
-    .titlemain {
+    .main-segment__title {
         font-style: normal;
         font-weight: bold;
         font-size: 18px;
@@ -465,7 +409,7 @@
         z-index: 2;
     }
     
-    .titletext {
+    .main-segment__title-text {
         position: relative;
         z-index: 2;
         margin-top: 8px;
@@ -475,7 +419,7 @@
         
     }
   
-    .marker {
+    .description-text__marker {
         position: absolute;
         right: 0;
         margin-right: 40px;
@@ -494,38 +438,10 @@
     .kriv {
         display: none;
     }
-    
-    .inner {
-        display: flex;
-        justify-content: flex-end;
-        position: relative;
-        z-index: 2;
-    }
-    
-    .inner-text-left {
-        position: relative;
-        background-color: #201F2E;
-        padding-right: 4px;
-    }
-    
-    .inner-text-right {
-        position: relative;
-        background-color: #201F2E;
-        padding-left: 4px;
-        text-align: right;
-    }
-    
-    .inner-dots {
-        position: absolute;
-        left: 0;
-        right: 0;
-        overflow-x: hidden;
-    }
-    
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-    .img {
+    .src__img {
         width: 100%;
         height: 400px;
         object-fit: cover;
@@ -538,7 +454,7 @@
         overflow: auto;
     }
       
-    .fullback {
+    .wrapp__fullback {
         z-index: 3;
         position: fixed;
         width: 64px;
@@ -578,7 +494,7 @@
         color: #C4C1CF;
     }
     
-    .glav {
+    .top-bar-segment__over {
         padding-top: 20px;
         font-style: normal;
         font-weight: bold;
@@ -587,14 +503,14 @@
         color: #FFFFFF
     }
     
-    .podglav {
+    .top-bar-segment__text {
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
         padding-bottom: 32px;
     }
     
-    .distruction {
+    .top-bar-segment__distruction {
         width: 320px;
         margin-top: 32px;
         margin-bottom: 8px;
@@ -619,7 +535,7 @@
         z-index: 1;
     }
     
-    .distruction-text{
+    .top-bar-segment__distruction-text{
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
@@ -628,7 +544,7 @@
         margin-bottom: 32px;
     }
     
-    .titlemain {
+    .main-segment__title {
         font-style: normal;
         font-weight: bold;
         font-size: 18px;
@@ -638,7 +554,7 @@
         z-index: 2;
     }
     
-    .titletext {
+    .main-segment__title-text {
         position: relative;
         z-index: 2;
         margin-top: 8px;
@@ -648,7 +564,7 @@
         
     }
 
-    .marker {
+    .description-text__marker {
         position: absolute;
         right: 0;
         margin-right: 40px;
@@ -667,34 +583,6 @@
     .kriv {
         display: none;
     }
-    
-    .inner {
-        display: flex;
-        justify-content: flex-end;
-        position: relative;
-        z-index: 2;
-    }
-    
-    .inner-text-left {
-        position: relative;
-        background-color: #201F2E;
-        padding-right: 4px;
-    }
-    
-    .inner-text-right {
-        position: relative;
-        background-color: #201F2E;
-        padding-left: 4px;
-        text-align: right;
-    }
-    
-    .inner-dots {
-        position: absolute;
-        left: 0;
-        right: 0;
-        overflow-x: hidden;
-    }
-    
 }
 
 @media screen and (min-width: 1440px) and (max-width: 2560px){
@@ -705,7 +593,7 @@
         overflow: auto;
     }
       
-    .fullback {
+    .wrapp__fullback {
         z-index: 3;
         position: fixed;
         width: 64px;
@@ -726,7 +614,7 @@
         object-fit: fill;
     }
 
-    .img {
+    .src__img {
         width: 100%;
         height: 400px;
         object-fit: cover;
@@ -751,7 +639,7 @@
         color: #C4C1CF;
     }
     
-    .glav {
+    .top-bar-segment__over {
         padding-top: 20px;
         font-style: normal;
         font-weight: bold;
@@ -760,14 +648,14 @@
         color: #FFFFFF
     }
     
-    .podglav {
+    .top-bar-segment__text {
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
         padding-bottom: 32px;
     }
     
-    .distruction {
+    .top-bar-segment__distruction {
         width: 320px;
         margin-top: 32px;
         margin-bottom: 8px;
@@ -792,7 +680,7 @@
         z-index: 1;
     }
     
-    .distruction-text{
+    .top-bar-segment__distruction-text{
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
@@ -801,7 +689,7 @@
         margin-bottom: 32px;
     }
     
-    .titlemain {
+    .main-segment__title {
         font-style: normal;
         font-weight: bold;
         font-size: 18px;
@@ -811,7 +699,7 @@
         z-index: 2;
     }
     
-    .titletext {
+    .main-segment__title-text {
         position: relative;
         z-index: 2;
         margin-top: 8px;
@@ -821,7 +709,7 @@
         
     }
 
-    .marker {
+    .description-text__marker {
         position: absolute;
         right: 0;
         margin-right: 40px;
@@ -840,32 +728,4 @@
     .kriv {
         display: none;
     }
-    
-    .inner {
-        display: flex;
-        justify-content: flex-end;
-        position: relative;
-        z-index: 2;
-    }
-    
-    .inner-text-left {
-        position: relative;
-        background-color: #201F2E;
-        padding-right: 4px;
-    }
-    
-    .inner-text-right {
-        position: relative;
-        background-color: #201F2E;
-        padding-left: 4px;
-        text-align: right;
-    }
-    
-    .inner-dots {
-        position: absolute;
-        left: 0;
-        right: 0;
-        overflow-x: hidden;
-    }
-    
 }

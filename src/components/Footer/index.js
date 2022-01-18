@@ -34,8 +34,8 @@ const Footer = () =>  {
         ? <Search />
         : (
           <>
-            <button className="footertext" onClick={handleClick}>{isFavoritesUrl ? 'Назад' : 'Избранные'}</button>
-            <button className="footersearch" onClick={show}><img src={search}/></button>
+            <button className="footer-text" onClick={handleClick}>{isFavoritesUrl ? 'Назад' : 'Избранные'}</button>
+            <button className="footer-search" onClick={show}><img src={search}/></button>
           </>
         )
       }

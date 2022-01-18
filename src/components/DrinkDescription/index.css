@@ -1,0 +1,26 @@
+.inner {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 2;
+}
+
+.inner-text-left {
+    position: relative;
+    background-color: #201F2E;
+    padding-right: 4px;
+}
+
+.inner-text-right {
+    position: relative;
+    background-color: #201F2E;
+    padding-left: 4px;
+    text-align: right;
+}
+
+.inner-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    overflow-x: hidden;
+}

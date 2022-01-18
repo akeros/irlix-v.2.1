@@ -24,7 +24,7 @@ const Search = () => {
 
   return (
     <div className='cancel-table'>
-      <input className='input' value={value} onChange={handleChange} autoFocus />
+      <input className='cancel-table-input' value={value} onChange={handleChange} autoFocus />
       <div className='cancel-top'>
         <button className='button-top' onClick={handleClear}><img src={cancel}/></button>
       </div>

@@ -3,11 +3,10 @@ import empty from '@images/empty.png'
 
 const CardSearch = () => (
         <div className="cardSearch">
-            <div className="style">
+            <div className="cardSearch_style">
               <img src={empty}/>
             </div>
-            <div className="notResult">Начинайте вводить</div>
-          <div className="cardrazmett"/>
+            <div className="cardSearch_notResult">Начинайте вводить</div>
         </div>
       );
     

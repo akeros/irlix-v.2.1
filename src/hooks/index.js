@@ -26,7 +26,7 @@ export const useToast = () => {
 
   const renderToast = () => isToastVisible && (
     <div className='upper-favorite'>
-        <div className='upper-text'>
+        <div className='upper-favorite-text'>
             { toastText }
         </div>
     </div>

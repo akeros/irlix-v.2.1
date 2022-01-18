@@ -31,26 +31,26 @@ const Card = ({img, percents, title, description, id, isEmpty}) => {
   };
 
   return (
-    <div className="container-content">
-      <div className="card">
-          <button className="style" onClick={handleClick}>
-            <img className='content' src={isEmpty ? empty : img}/>
+    <div className="container">
+      <div className="container__card">
+          <button className="container__card-style" onClick={handleClick}>
+            <img className='container__card-style-content' src={isEmpty ? empty : img}/>
           </button>
         {isEmpty
-          ? <div className="notResult">Нет результатов</div>
+          ? <div className="container__noResult">Нет результатов</div>
           : (
             <>
-              <div className="cardblack">
-                <div className="cardblacktext">{percents}%</div>
-                <div className="cardblacktextalc">Алкоголь</div>
+              <div className="container__cardblack">
+                <div className="container__percents">{percents}%</div>
+                <div className="container__alcohol">Алкоголь</div>
               </div>
               <Button style="flag" isFavorite={isFavorite} onClick={favoriteClick} />
             </>
           )
         }
-        <div className="cardrazmett">
-          <div className="cardtextt">{title}</div>
-          <div className="cardtexttwoo">{description}</div>
+        <div className="table-text">
+          <div className="table-text__title">{title}</div>
+          <div className="table-text__description">{description}</div>
         </div>
       </div>
     </div>
