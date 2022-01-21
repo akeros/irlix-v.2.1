@@ -1,10 +1,10 @@
-import './index.css';
 import logo from '@images/logo.svg'
 import {useNavigate} from 'react-router';
 import {useDispatch, useSelector} from "react-redux";
 import {setFilter} from "@redux/appSlice";
-import {useLocation} from "react-router-dom";
-import {baseUrl, getUrlName, notHeaderAndFooterUrl, routeHeaders} from "@utils/routes";
+import {baseUrl} from "@utils/routes";
+
+import './index.css';
 
 const months = [
   'Января',
@@ -20,7 +20,7 @@ const months = [
   'Декабря',
 ];
 
-const Header = () => {
+const Header = ({ title }) => {
   const dispatch = useDispatch();
   const filterType = useSelector(state => state.app.filterType);
   const date = new Date();
@@ -28,13 +28,6 @@ const Header = () => {
   const year = date.getFullYear();
   const day = date.getDate();
   const month = months[date.getMonth()];
-
-  const { pathname } = useLocation();
-
-  const urlName = getUrlName(pathname);
-  const isEmpty = notHeaderAndFooterUrl.includes(urlName);
-
-  const title = routeHeaders[urlName];
 
   const cards = useSelector((state) => state.app.cards);
 
@@ -49,9 +42,6 @@ const Header = () => {
     dispatch(setFilter(filterType !== header && header));
   }
 
-  if (isEmpty) {
-    return null;
-  }
 
   return (
     <header>
@@ -60,7 +50,9 @@ const Header = () => {
           <div className="table-wrapper-text" onClick={handleClick}>{title}</div>
           <div className="table-wrapper-date">{day} {month} {year}</div>
         </div>
-          <div><img src={logo}/></div>
+          <div>
+            <img src={logo} alt='logo'/>
+          </div>
       </div>
       <nav>
         {headers.map((header) => (

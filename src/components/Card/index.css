@@ -4,6 +4,7 @@
   border-radius: 38px;
   overflow: hidden;
   height: 421px;
+  width: 100%;
 }
 
 .container__card {
@@ -75,13 +76,13 @@
   color: #C4C1CF;
 }
 
-.table-text {
+.description{
   position: absolute;
   left: 30px;
   bottom: 45px;
 }
 
-.table-text__title {
+.description__title {
   left: 32px;
   top: 83.29%;
   bottom: 10.12%;
@@ -100,7 +101,7 @@
   background: transparent;
 }
 
-.table-text__description {
+.description__title-down {
   left: 32px;
   top: 89.41%;
   bottom: 5.65%;

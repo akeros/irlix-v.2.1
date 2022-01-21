@@ -48,9 +48,9 @@ const Card = ({img, percents, title, description, id, isEmpty}) => {
             </>
           )
         }
-        <div className="table-text">
-          <div className="table-text__title">{title}</div>
-          <div className="table-text__description">{description}</div>
+        <div className="description">
+          <div className="description__title">{title}</div>
+          <div className="description__title-down">{description}</div>
         </div>
       </div>
     </div>
