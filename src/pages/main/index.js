@@ -18,23 +18,21 @@ function Main() {
   }, [])
 
   return (
-    <main>
-      <div className="cards-list">
+    <div className="cards-list">
 
-        {cards?.filter(card => !filterType || card?.type === filterType)?.map((item) => (
-          <Card
-            img={item.img}
-            percents={item.percents}
-            title={item.title}
-            description={item.description}
-            key={item.id}
-            id={item.id}
-            isEmpty={item?.isEmpty}
-          />
-        ))}
+      {cards?.filter(card => !filterType || card?.type === filterType)?.map((item) => (
+        <Card
+          img={item.img}
+          percents={item.percents}
+          title={item.title}
+          description={item.description}
+          key={item.id}
+          id={item.id}
+          isEmpty={item?.isEmpty}
+        />
+      ))}
 
-      </div>
-    </main>
+    </div>
   );
 }
 

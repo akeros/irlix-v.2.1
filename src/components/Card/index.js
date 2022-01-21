@@ -1,21 +1,14 @@
 import './index.css';
 import Button from '../Button';
-import {useNavigate} from 'react-router';
 import empty from '@images/empty.png';
 import {descriptionUrl} from "@utils/routes";
 import {useDispatch, useSelector} from "react-redux";
 import {useToast} from "../../hooks";
 import {toggleFavorite} from "@redux/appSlice";
+import {Link} from "react-router-dom";
 
 const Card = ({img, percents, title, description, id, isEmpty}) => {
   const dispatch = useDispatch();
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    if (!isEmpty) {
-      navigate(`${descriptionUrl}/${id}`)
-    }
-  }
 
   const favorites = useSelector((state => state.app.favorites));
 
@@ -33,9 +26,11 @@ const Card = ({img, percents, title, description, id, isEmpty}) => {
   return (
     <div className="container">
       <div className="container__card">
-          <button className="container__card-style" onClick={handleClick}>
+        <Link to={!isEmpty && `${descriptionUrl}/${id}`}>
+          <div className="container__card-style">
             <img className='container__card-style-content' src={isEmpty ? empty : img}/>
-          </button>
+          </div>
+        </Link>
         {isEmpty
           ? <div className="container__noResult">Нет результатов</div>
           : (
