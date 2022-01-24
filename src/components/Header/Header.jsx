@@ -1,23 +1,23 @@
-import logo from '@images/logo.svg'
-import {useNavigate} from 'react-router';
+import logo from "@images/logo.svg"
+import {useNavigate} from "react-router";
 import {useDispatch, useSelector} from "react-redux";
 import {setFilter} from "@redux/appSlice";
 import {baseUrl} from "@utils/routes";
 
-import './header.css';
+import "./header.css";
 
 const months = [
-  'Января',
-  'Февраля',
-  'Марта',
-  'Апреля',
-  'Мая',
-  'Июня',
-  'Июля',
-  'Августа',
-  'Сентября',
-  'Ноября',
-  'Декабря',
+  "Января",
+  "Февраля",
+  "Марта",
+  "Апреля",
+  "Мая",
+  "Июня",
+  "Июля",
+  "Августа",
+  "Сентября",
+  "Ноября",
+  "Декабря",
 ];
 
 export const Header = ({ title }) => {
@@ -50,13 +50,13 @@ export const Header = ({ title }) => {
           <div className="table-wrapper-date">{day} {month} {year}</div>
         </div>
           <div>
-            <img src={logo} alt='logo'/>
+            <img src={logo} alt="logo"/>
           </div>
       </div>
       <nav>
         {headers.map((header) => (
           <button
-            className={`nav-button ${header === filterType && 'nav-button-active'}`}
+            className={`nav-button ${header === filterType && "nav-button-active"}`}
             onClick={() => handleSwitch(header)}
             key={header}
           >

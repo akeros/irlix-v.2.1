@@ -1,5 +1,5 @@
 import {useSelector} from "react-redux";
-import {Card} from '@components/Card';
+import {Card} from "@components/Card";
 
 export const Email = () =>  {
     const favorites = useSelector((state => state.app.favorites));

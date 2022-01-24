@@ -1,11 +1,11 @@
 import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 
-import {Card} from '@components/Card/index';
+import {Card} from "@components/Card/index";
 import {getCards} from "@api";
 import {setCards} from "@redux/appSlice";
 
-import './main.css';
+import "./main.css";
 
 export const Main = () => {
   const dispatch = useDispatch();

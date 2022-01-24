@@ -1,9 +1,9 @@
-import './card.css';
-import {Button} from '@components/Button';
-import empty from '@images/empty.png';
+import "./card.css";
+import {Button} from "@components/Button";
+import empty from "@images/empty.png";
 import {descriptionUrl} from "@utils/routes";
 import {useDispatch, useSelector} from "react-redux";
-import {useToast} from '../../hooks';
+import {useToast} from "../../hooks";
 import {toggleFavorite} from "@redux/appSlice";
 import {Link} from "react-router-dom";
 
@@ -18,7 +18,7 @@ export const Card = ({img, percents, title, description, id, isEmpty}) => {
 
   const favoriteClick = () => {
     if (!isFavorite) {
-      handlerToast('Добавлено в избранное');
+      handlerToast("Добавлено в избранное");
     }
     dispatch(toggleFavorite(id));
   };
@@ -28,7 +28,7 @@ export const Card = ({img, percents, title, description, id, isEmpty}) => {
       <div className="container__card">
         <Link to={!isEmpty && `${descriptionUrl}/${id}`}>
           <div className="container__card-style">
-            <img className='container__card-style-content' alt='logo' src={isEmpty ? empty : img}/>
+            <img className="container__card-style-content" alt="logo" src={isEmpty ? empty : img}/>
           </div>
         </Link>
         {isEmpty

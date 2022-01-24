@@ -1,17 +1,17 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from "@reduxjs/toolkit"
 
 const initialState = {
   favorites: [],
-  search: '',
+  search: "",
   startCards: [],
   isToastVisible: false,
-  toastText: '',
+  toastText: "",
   filterType: undefined,
   cards: [],
 }
 
 export const appSlice = createSlice({
-  name: 'app',
+  name: "app",
   initialState,
   reducers: {
     toggleFavorite: (state, { payload: cardId }) => { // id then what we send to (action (dispatch) togglefavorite
@@ -28,15 +28,15 @@ export const appSlice = createSlice({
 
       state.cards = filteredCards.length ? filteredCards : [{
         id: 130,
-        title: 'Пусто',
-        description: 'Попробуйте изменить запрос',
+        title: "Пусто",
+        description: "Попробуйте изменить запрос",
         img: undefined,
-        filters: '',
+        filters: "",
         isEmpty: true,
       }];
     },
     clearSearch: (state) => {
-      state.search = '';
+      state.search = "";
       state.cards = state.startCards;
     },
     setCards:  (state, { payload: cards }) => {
@@ -49,7 +49,7 @@ export const appSlice = createSlice({
     },
     clearToast: (state) => {
       state.isToastVisible = false;
-      state.toastText = '';
+      state.toastText = "";
     },
     setFilter: (state, { payload: filter }) => {
       state.filterType = filter;

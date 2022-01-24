@@ -1,9 +1,8 @@
-import {Outlet , useLocation, Route, Routes} from 'react-router-dom';
+import {Outlet , useLocation, Route, Routes} from "react-router-dom";
 import {Header} from "@components/Header";
-import {Footer, FavoriteFooter} from '@components/Footer';
+import {Footer, FavoriteFooter} from "@components/Footer";
 import {Search} from "@components/Search";
 import {baseUrl, favoritesUrl, searchUrl, routeHeaders} from "@utils/routes";
-
 
 export const FullPageRoutes = () => {
   const location = useLocation();

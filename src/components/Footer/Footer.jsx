@@ -1,6 +1,6 @@
-import './footer.css';
-import search from '@images/search.svg'
-import {useNavigate} from 'react-router';
+import "./footer.css";
+import search from "@images/search.svg"
+import {useNavigate} from "react-router";
 import {favoritesUrl, searchUrl} from "@utils/routes";
 
 export const Footer = () =>  {
@@ -20,7 +20,7 @@ export const Footer = () =>  {
         Избранные
       </button>
       <button className="footer-search" onClick={showSearch}>
-        <img src={search} alt='logo'/>
+        <img src={search} alt="logo"/>
       </button>
     </>
   );

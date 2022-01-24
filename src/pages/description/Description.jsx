@@ -1,7 +1,7 @@
-import arrow from '@images/arrow.svg'
-import kriv from '@images/kriv.svg'
-import './description.css';
-import {useNavigate} from 'react-router';
+import arrow from "@images/arrow.svg"
+import kriv from "@images/kriv.svg"
+import "./description.css";
+import {useNavigate} from "react-router";
 import {useEffect, useRef, useState } from "react";
 import {useParams} from "react-router-dom";
 import {Button} from "@components/Button";
@@ -12,43 +12,43 @@ import {getCards} from "@api";
 import {baseUrl} from "@utils/routes";
 import {useToast} from "../../hooks";
 
-const DOT = '.';
+const DOT = ".";
 
 const INGRIDIENTS = [
     {
-    title: 'Джин',
+    title: "Джин",
     value: 40 ,
-    valueType: 'мл', 
+    valueType: "мл", 
   },
   {
-    title: 'Шнапс',
+    title: "Шнапс",
     value: 10 ,
-    valueType: 'мл', 
+    valueType: "мл", 
   },
   {
-    title: 'Ликёр',
+    title: "Ликёр",
     value: 25 ,
-    valueType: 'мл', 
+    valueType: "мл", 
   },
   {
-    title: 'Сок',
+    title: "Сок",
     value: 25 ,
-    valueType: 'мл', 
+    valueType: "мл", 
   },
   {
-    title: 'Жасмин',
+    title: "Жасмин",
     value: 15 ,
-    valueType: 'мл', 
+    valueType: "мл", 
   },
   {
-      title: 'Ежевика',
+      title: "Ежевика",
       value: 2 ,
-      valueType: 'шт', 
+      valueType: "шт", 
   },
   {
-    title: 'Белок',
+    title: "Белок",
     value: 20 ,
-    valueType: 'мл', 
+    valueType: "мл", 
   },
 ];
 
@@ -68,7 +68,7 @@ export const Description = () => {
 
   const favoriteClick = () => {
     if (!isFavorite) {
-      handlerToast('Добавлено в избранное');
+      handlerToast("Добавлено в избранное");
     }
     dispatch(toggleFavorite(id));
   };
@@ -106,10 +106,10 @@ export const Description = () => {
   return (
     <div className="wrapp" ref={refDots}>
       <button className="wrapp__fullback" onClick={handleClick}>
-        <img src={arrow} alt='logo'/>
+        <img src={arrow} alt="logo"/>
       </button>
       <div className="src">
-          <img className="src__img" src={card.img} alt='logo'/>
+          <img className="src__img" src={card.img} alt="logo"/>
       </div>
       <div className="description-text">
         <div className="description-text__marker">
@@ -120,7 +120,7 @@ export const Description = () => {
           <div className="top-bar-segment__text">{card.description}</div>
           <div className="top-bar-segment__distruction">Ингредиенты</div>
           <div className="top-bar-segment__distruction-text">
-            <div className='kriv'><img src={kriv} alt='logo'/></div>
+            <div className="kriv"><img src={kriv} alt="logo"/></div>
             {INGRIDIENTS.map(ingredient => (
               <DrinkDescription 
               {...ingredient}

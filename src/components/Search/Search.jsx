@@ -1,6 +1,6 @@
-import './search.css';
+import "./search.css";
 import {useDispatch, useSelector} from "react-redux";
-import cancel from '@images/cancel.svg'
+import cancel from "@images/cancel.svg"
 import {clearSearch, searching,} from "@redux/appSlice";
 import {useNavigate} from "react-router";
 import {baseUrl} from "@utils/routes";
@@ -23,10 +23,10 @@ export const Search = () => {
   }
 
   return (
-    <div className='cancel-table'>
-      <input className='cancel-table-input' value={searchString} onChange={handleChange} autoFocus />
-      <div className='cancel-top'>
-        <button className='button-top' onClick={handleClear}><img src={cancel} alt='logo'/></button>
+    <div className="cancel-table">
+      <input className="cancel-table-input" value={searchString} onChange={handleChange} autoFocus />
+      <div className="cancel-top">
+        <button className="button-top" onClick={handleClear}><img src={cancel} alt="logo"/></button>
       </div>
     </div>
   );

@@ -1,8 +1,8 @@
 import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 
-import {Card} from '@components/Card/index';
-import {CardSearch} from '@components/CardSearch/index';
+import {Card} from "@components/Card/index";
+import {CardSearch} from "@components/CardSearch/index";
 
 import {getCards} from "@api";
 
