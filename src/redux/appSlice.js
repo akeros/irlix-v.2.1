@@ -22,7 +22,9 @@ export const appSlice = createSlice({
     searching: (state, { payload: search }) => {
       state.search = search;
 
-      const filteredCards = state.startCards.filter(card => card.title.match(search)?.length || card.description.match(search)?.length);
+      const filteredCards = state.startCards
+        .filter(card => card.title.match(search)?.length 
+         || card.description.match(search)?.length);
 
       state.cards = filteredCards.length ? filteredCards : [{
         id: 130,

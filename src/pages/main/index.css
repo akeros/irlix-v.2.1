@@ -12,7 +12,7 @@ main {
   margin-bottom: 96px;
 }
 
-.cards-list {
+.card-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

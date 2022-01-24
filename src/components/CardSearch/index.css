@@ -1,9 +1,9 @@
 .cardSearch_style {
   padding: 0;
-border-width: 0px;
-border-radius: 38px;
-overflow: hidden;
-height: 421px;
+  border-width: 0px;
+  border-radius: 38px;
+  overflow: hidden;
+  height: 421px;
 }
 
 .cardSearch {
@@ -30,6 +30,5 @@ height: 421px;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
-
   color: #FFFFFF;
 }

@@ -1,18 +1,14 @@
 import React from 'react';
-import Email from './pages/Email/index';
-import Searching from './pages/Searching/index';
-import Main from './pages/main/index';
-import Description from './pages/description/index';
+import {Email} from './pages/Email/index';
+import {Searching} from './pages/Searching/index';
+import {Main} from './pages/main/index';
+import {Description} from './pages/Description';
 import {FullPageRoutes} from './utils/routes/index';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import {useToast} from "./hooks";
-import {baseUrl, descriptionUrl, favoritesUrl, searchUrl } from "@utils/routes";
+import { baseUrl, descriptionUrl, favoritesUrl, searchUrl } from "@utils/routes";
 
-
-
-
-
-const App = () => {
+export const App = () => {
   const { renderToast } = useToast();
   return (
     <>
@@ -32,5 +28,3 @@ const App = () => {
     </>
   )
 }
-
-export default App;
