@@ -127,7 +127,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #201F2E;
+  background-color: #0E0D13;
+  min-width: 320px;
+
+}
+
+* {
+  box-sizing: inherit;
 }
 
 code {

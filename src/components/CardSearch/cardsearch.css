@@ -1,0 +1,34 @@
+.cardSearch_style {
+  padding: 0;
+  border-width: 0px;
+  border-radius: 38px;
+  overflow: hidden;
+  height: 421px;
+}
+
+.cardSearch {
+  display: flex;
+  position: relative;
+  padding: 16px 32px 16px 32px;
+  width: 320px;
+  height: 421px;
+  margin: 0 auto;
+}
+
+.cardSearch_notResult {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 32px;
+  left: 0;
+  right: 0;
+  padding: 20px 10px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+}
