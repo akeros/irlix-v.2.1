@@ -326,6 +326,7 @@ module.exports = function (webpackEnv) {
         .map(ext => `.${ext}`)
         .filter(ext => useTypeScript || !ext.includes('ts')),
       alias: {
+        '@hooks': path.join(__dirname, '../src/hooks'),
         '@images': path.join(__dirname, '../src/images'),
         '@components': path.join(__dirname, '../src/components'),
         '@api': path.join(__dirname, '../src/api'),

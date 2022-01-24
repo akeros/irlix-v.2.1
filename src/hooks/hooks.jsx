@@ -1,5 +1,5 @@
-import './index.css';
-import { useEffect } from 'react';
+import './hooks.css';
+import {useEffect} from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import {clearToast, showToast} from "../redux/appSlice";
 
@@ -27,7 +27,7 @@ export const useToast = () => {
   const renderToast = () => isToastVisible && (
     <div className='upper-favorite'>
         <div className='upper-favorite-text'>
-            { toastText }
+            {toastText}
         </div>
     </div>
   )

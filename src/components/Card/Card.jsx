@@ -1,9 +1,9 @@
-import './index.css';
-import {Button} from '../Button';
+import './card.css';
+import {Button} from '@components/Button';
 import empty from '@images/empty.png';
 import {descriptionUrl} from "@utils/routes";
 import {useDispatch, useSelector} from "react-redux";
-import {useToast} from "../../hooks";
+import {useToast} from '../../hooks';
 import {toggleFavorite} from "@redux/appSlice";
 import {Link} from "react-router-dom";
 

@@ -5,7 +5,7 @@ import {Card} from '@components/Card/index';
 import {getCards} from "@api";
 import {setCards} from "@redux/appSlice";
 
-import './index.css';
+import './main.css';
 
 export const Main = () => {
   const dispatch = useDispatch();

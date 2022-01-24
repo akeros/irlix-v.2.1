@@ -4,7 +4,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {setFilter} from "@redux/appSlice";
 import {baseUrl} from "@utils/routes";
 
-import './index.css';
+import './header.css';
 
 const months = [
   'Января',

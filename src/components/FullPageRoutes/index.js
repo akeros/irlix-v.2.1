@@ -1,0 +1,1 @@
+export {FullPageRoutes} from "./FullPageRoutes";

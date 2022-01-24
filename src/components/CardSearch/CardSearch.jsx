@@ -1,4 +1,4 @@
-import './index.css';
+import './cardsearch.css';
 import empty from '@images/empty.png'
 
 export const CardSearch = () => (

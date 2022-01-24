@@ -1,6 +1,6 @@
 import arrow from '@images/arrow.svg'
 import kriv from '@images/kriv.svg'
-import './index.css';
+import './description.css';
 import {useNavigate} from 'react-router';
 import {useEffect, useRef, useState } from "react";
 import {useParams} from "react-router-dom";

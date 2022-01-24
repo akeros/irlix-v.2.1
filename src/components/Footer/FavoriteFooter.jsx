@@ -1,4 +1,4 @@
-import './index.css';
+import './footer.css';
 import search from '@images/search.svg'
 import {useNavigate} from 'react-router';
 import {baseUrl,searchUrl} from "@utils/routes";
@@ -6,7 +6,7 @@ import {baseUrl,searchUrl} from "@utils/routes";
 export const FavoriteFooter = () =>  {
     const navigate = useNavigate();
   
-    const show = () => {
+    const showFooter = () => {
       navigate(searchUrl);
     }
   
@@ -19,7 +19,7 @@ export const FavoriteFooter = () =>  {
         <button className="footer-text" onClick={handleClick}>
           Назад
         </button>
-        <button className="footer-search" onClick={show}>
+        <button className="footer-search" onClick={showFooter}>
           <img src={search} alt='logo'/>
         </button>
       </>
