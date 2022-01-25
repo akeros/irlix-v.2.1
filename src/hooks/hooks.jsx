@@ -1,7 +1,7 @@
 import "./hooks.css";
 import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {clearToast, showToast} from "../redux/appSlice";
+import {clearToast, showToast} from "../Redux/AppSlice";
 
 export const useToast = () => {
   const dispatch = useDispatch();
