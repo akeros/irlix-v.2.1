@@ -13,13 +13,13 @@
       "@images/*": ["./src/images/*"],
       "@components/*": ["./src/components/*"],
       "@api/*": ["./src/api/*"],
-      "@redux/*": ["./src/redux/*"],
+      "@redux/*": ["src/Redux/*"],
       "@background/*": ["./background/*"],
       "@card/*": ["./card/*"],
       "@empty/*": ["./empty/*"],
-      "@utils/*": ["./src/utils/*"],
+      "@utils/*": ["src/Utils/*"],
       "@modules/*": ["./src/reducers/*"],
-      "@hooks/*": ["./src/hooks/*"],
+      "@hooks/*": ["src/Hooks/*"],
       "@assets/*": ["./assets/*"]
     }
   },

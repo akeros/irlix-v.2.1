@@ -1,12 +1,12 @@
 import React from "react";
 import {Email} from "./pages/Email/index";
 import {Searching} from "./pages/Searching/index";
-import {Main} from "./pages/main/index";
+import {Main} from "./pages/Main/index";
 import {Description} from "./pages/Description";
 import {FullPageRoutes} from "@components/FullPageRoutes";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import {useToast} from "@hooks";
-import {baseUrl, descriptionUrl, favoritesUrl, searchUrl} from "@utils/routes";
+import {baseUrl, descriptionUrl, favoritesUrl, searchUrl} from "src/Utils/Routes";
 
 export const App = () => {
   const { renderToast } = useToast();

@@ -1,10 +1,10 @@
 import "./card.css";
 import {Button} from "@components/Button";
 import empty from "@images/empty.png";
-import {descriptionUrl} from "@utils/routes";
+import {descriptionUrl} from "src/Utils/Routes";
 import {useDispatch, useSelector} from "react-redux";
-import {useToast} from "../../hooks";
-import {toggleFavorite} from "@redux/appSlice";
+import {useToast} from "../../Hooks";
+import {toggleFavorite} from "src/Redux/AppSlice";
 import {Link} from "react-router-dom";
 
 export const Card = ({img, percents, title, description, id, isEmpty}) => {
