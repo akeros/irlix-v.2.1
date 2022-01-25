@@ -7,10 +7,10 @@ import {useParams} from "react-router-dom";
 import {Button} from "@components/Button";
 import {DrinkDescription} from "@components/DrinkDescription";
 import {useDispatch, useSelector} from "react-redux";
-import {setCards, toggleFavorite} from "src/Redux/AppSlice";
+import {setCards, toggleFavorite} from "../../Redux/AppSlice";
 import {getCards} from "@api";
-import {baseUrl} from "src/Utils/Routes";
-import {useToast} from "../../Hooks";
+import {baseUrl} from "src/utils/routes";
+import {useToast} from "@hooks";
 
 const DOT = ".";
 

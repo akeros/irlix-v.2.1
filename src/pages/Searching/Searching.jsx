@@ -6,7 +6,7 @@ import {CardSearch} from "@components/CardSearch/index";
 
 import {getCards} from "@api";
 
-import {setCards} from "src/Redux/AppSlice";
+import {setCards} from "../../Redux/AppSlice";
 
 export const Searching = () => {
   const dispatch = useDispatch();

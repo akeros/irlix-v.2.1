@@ -3,7 +3,7 @@ import {useDispatch, useSelector} from "react-redux";
 
 import {Card} from "@components/Card/index";
 import {getCards} from "@api";
-import {setCards} from "src/Redux/AppSlice";
+import {setCards} from "../../Redux/AppSlice";
 
 import "./main.css";
 

@@ -1,5 +1,5 @@
 export const baseUrl = "/";
-export const descriptionUrl = "/description";
+export const descriptionUrl = "/Description";
 export const favoritesUrl = "/favorites";
 export const searchUrl = "/search";
 
