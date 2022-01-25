@@ -11,11 +11,11 @@
     "baseUrl": "./",
     "paths": {
       "@images/*": ["./src/images/*"],
-      "@components/*": ["./src/components/*"],
+      "@components/*": ["./src/Components/*"],
       "@api/*": ["./src/api/*"],
       "@redux/*": ["src/Redux/*"],
       "@background/*": ["./background/*"],
-      "@card/*": ["./card/*"],
+      "@card/*": ["./Card/*"],
       "@empty/*": ["./empty/*"],
       "@utils/*": ["src/Utils/*"],
       "@modules/*": ["./src/reducers/*"],
