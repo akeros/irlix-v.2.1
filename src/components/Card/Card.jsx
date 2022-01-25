@@ -24,20 +24,18 @@ export const Card = ({img, percents, title, description, id, isEmpty}) => {
   };
 
   return (
-    <div className="container">
-      <div className="container__card">
-        <Link to={!isEmpty && `${descriptionUrl}/${id}`}>
-          <div className="container__card-style">
-            <img className="container__card-style-content" alt="logo" src={isEmpty ? empty : img}/>
-          </div>
+    <div className="card">
+      <div className="card__content">
+        <Link className="card__content-style" to={!isEmpty && `${descriptionUrl}/${id}`}>
+            <img className="card__content-style-image" alt="logo" src={isEmpty ? empty : img}/>
         </Link>
         {isEmpty
-          ? <div className="container__noResult">Нет результатов</div>
+          ? <div className="card__noResult">Нет результатов</div>
           : (
             <>
-              <div className="container__cardblack">
-                <div className="container__percents">{percents}%</div>
-                <div className="container__alcohol">Алкоголь</div>
+              <div className="card__cardblack">
+                <div className="card__percents">{percents}%</div>
+                <div className="card__alcohol">Алкоголь</div>
               </div>
               <Button className="flag" isFavorite={isFavorite} onClick={favoriteClick} />
             </>

@@ -24,6 +24,7 @@
     border-radius: 16px;
     border: none;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .src {
@@ -139,6 +140,8 @@
     right: 0;
     border: none;
     background: transparent;
+    cursor: pointer;
+
 }
 
 .kriv {
@@ -175,6 +178,7 @@
     border-radius: 16px;
     border: none;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .src {
@@ -288,6 +292,7 @@
     right: 0;
     border: none;
     background: transparent;
+    cursor: pointer;
 }
 
 .kriv {
@@ -320,6 +325,7 @@
     border-radius: 16px;
     border: none;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .src {
@@ -433,6 +439,7 @@
     right: 0;
     border: none;
     background: transparent;
+    cursor: pointer;
 }
 
 .kriv {
@@ -465,6 +472,7 @@
     border-radius: 16px;
     border: none;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .src {
@@ -578,6 +586,7 @@
     right: 0;
     border: none;
     background: transparent;
+    cursor: pointer;
 }
 
 .kriv {
@@ -604,6 +613,7 @@
     border-radius: 16px;
     border: none;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .src {
@@ -723,6 +733,7 @@
     right: 0;
     border: none;
     background: transparent;
+    cursor: pointer;
 }
 
 .kriv {
