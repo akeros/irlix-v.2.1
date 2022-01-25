@@ -1,7 +1,7 @@
 import "./footer.css";
 import search from "@images/search.svg"
 import {useNavigate} from "react-router";
-import {baseUrl, searchUrl} from "@utils/routes";
+import {baseUrl, searchUrl} from "src/Utils/Routes";
 
 export const FavoriteFooter = () =>  {
     const navigate = useNavigate();

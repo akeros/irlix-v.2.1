@@ -11,15 +11,15 @@
     "baseUrl": "./",
     "paths": {
       "@images/*": ["./src/images/*"],
-      "@components/*": ["./src/components/*"],
+      "@components/*": ["./src/Components/*"],
       "@api/*": ["./src/api/*"],
-      "@redux/*": ["./src/redux/*"],
+      "@redux/*": ["src/Redux/*"],
       "@background/*": ["./background/*"],
-      "@card/*": ["./card/*"],
+      "@card/*": ["./Card/*"],
       "@empty/*": ["./empty/*"],
-      "@utils/*": ["./src/utils/*"],
+      "@utils/*": ["src/Utils/*"],
       "@modules/*": ["./src/reducers/*"],
-      "@hooks/*": ["./src/hooks/*"],
+      "@hooks/*": ["src/Hooks/*"],
       "@assets/*": ["./assets/*"]
     }
   },
