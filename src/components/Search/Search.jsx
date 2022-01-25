@@ -1,9 +1,9 @@
 import "./search.css";
 import {useDispatch, useSelector} from "react-redux";
 import cancel from "@images/cancel.svg"
-import {clearSearch, searching,} from "src/Redux/AppSlice";
+import {clearSearch, searching,} from "../../Redux/AppSlice";
 import {useNavigate} from "react-router";
-import {baseUrl} from "src/Utils/Routes";
+import {baseUrl} from "src/utils/routes";
 
 export const Search = () => {
   const dispatch = useDispatch();

@@ -1,1 +1,1 @@
-export {useToast} from "./Hooks";
+export {useToast} from "./hooks";

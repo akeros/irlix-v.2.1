@@ -1,8 +1,8 @@
 import logo from "@images/logo.svg"
 import {useNavigate} from "react-router";
 import {useDispatch, useSelector} from "react-redux";
-import {setFilter} from "src/Redux/AppSlice";
-import {baseUrl} from "src/Utils/Routes";
+import {setFilter} from "../../Redux/AppSlice";
+import {baseUrl} from "src/utils/routes";
 
 import "./header.css";
 

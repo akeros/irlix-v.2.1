@@ -199,7 +199,7 @@ module.exports = function (webpackEnv) {
       path: isEnvProduction ? paths.appBuild : undefined,
       // Add /* filename */ comments to generated require()s in the output.
       pathinfo: isEnvDevelopment,
-      // There will be one main bundle, and one file per asynchronous chunk.
+      // There will be one Main bundle, and one file per asynchronous chunk.
       // In development, it does not produce real files.
       filename: isEnvProduction
         ? 'static/js/[name].[contenthash:8].js'
@@ -326,9 +326,9 @@ module.exports = function (webpackEnv) {
         .map(ext => `.${ext}`)
         .filter(ext => useTypeScript || !ext.includes('ts')),
       alias: {
-        '@hooks': path.join(__dirname, '../src/Hooks'),
+        '@hooks': path.join(__dirname, '../src/hooks'),
         '@images': path.join(__dirname, '../src/images'),
-        '@components': path.join(__dirname, '../src/Components'),
+        '@components': path.join(__dirname, '../src/components'),
         '@api': path.join(__dirname, '../src/api'),
         '@redux': path.join(__dirname, '../src/Redux'),
         '@utils': path.join(__dirname, '../src/Utils'),
