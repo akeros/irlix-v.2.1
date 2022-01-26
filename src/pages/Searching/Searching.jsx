@@ -2,7 +2,7 @@ import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
 
 import {Card} from "@components/Card/index";
-import {CardSearch} from "@components/CardSearch/index";
+import {CardEmpty} from "@components/CardSearch/index";
 
 import {getCards} from "@api";
 
@@ -37,7 +37,7 @@ export const Searching = () => {
               isEmpty={item?.isEmpty}
             />
           ))
-          : <CardSearch/>
+          : <CardEmpty text={"Начинайте вводить"}/>
       }
     </div>
   );

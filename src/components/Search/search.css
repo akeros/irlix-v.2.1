@@ -30,4 +30,5 @@
 .button-top {
   background: none;
   border: none;
+  cursor: pointer;
 }

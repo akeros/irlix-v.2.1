@@ -1,4 +1,4 @@
-.container__card-style {
+.card__content-style {
   padding: 0;
   border-width: 0px;
   border-radius: 38px;
@@ -7,27 +7,25 @@
   width: 100%;
 }
 
-.container__card {
+.card__content {
   display: flex;
   position: relative;
-  margin: 0 auto;
   width: 100%;
-  justify-content: center;
 }
 
-.container {
+.card {
   width: 100%;
   padding: 16px 16px;
   box-sizing: border-box;
 }
 
-.container__card-style-content {
+.card__content-style-image {
   width: 100%;
   height: 421px;
   object-fit: cover;
 }
 
-.container__noResult {
+.card__noResult {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,7 +43,7 @@
   color: #FFFFFF;
 }
 
-.container__cardblack {
+.card__cardblack {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -54,12 +52,12 @@
   max-height: 80px;
   background-color: #0E0D13;
   border-radius: 24px;
-  top: 32px;
-  left: 30px;
+  top: 18px;
+  left: 18px;
   padding: 20px 10px;
 }
 
-.container__percents {
+.card__percents {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -67,7 +65,7 @@
   color: #FFFFFF;
 }
 
-.container__alcohol {
+.card__alcohol {
   width: 61px;
   font-style: normal;
   font-weight: 300;
@@ -77,8 +75,8 @@
 
 .description{
   position: absolute;
-  left: 30px;
-  bottom: 45px;
+  left: 32px;
+  bottom: 24px;
 }
 
 .description__title {
@@ -95,9 +93,10 @@
 .flag {
   position: absolute;
   top: -8px;
-  right: 62px;
+  right: 32px;
   border: none;
   background: transparent;
+  cursor: pointer;
 }
 
 .description__title-down {
@@ -111,8 +110,20 @@
   color: #C4C1CF;
 }
 
+.card__content-style:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(0deg, rgba(0,0,0,0.6505952722886029) 0%, rgba(255,255,255,0) 25%);
+  border-bottom-left-radius: 38px;
+  border-bottom-right-radius: 38px;
+}
+
 @media screen and (min-width: 768px) {
-  .container {
+  .card {
     width: 50%;
     padding: 16px 16px;
     box-sizing: border-box;
@@ -120,7 +131,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .container {
+  .card {
     width: 33%;
     padding: 16px 16px;
     box-sizing: border-box;
@@ -128,10 +139,11 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .container {
+  .card {
     width: 25%;
     padding: 16px 16px;
     margin: 0 auto;
     box-sizing: border-box;
+    max-width: 1800px;
   }
 }

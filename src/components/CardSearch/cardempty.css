@@ -1,4 +1,4 @@
-.cardSearch_style {
+.cardEmpty_style {
   padding: 0;
   border-width: 0px;
   border-radius: 38px;
@@ -6,16 +6,16 @@
   height: 421px;
 }
 
-.cardSearch {
-  display: flex;
+.cardEmpty {
   position: relative;
-  padding: 16px 32px 16px 32px;
-  width: 320px;
+  width: 321px;
   height: 421px;
   margin: 0 auto;
+  background: url("../../images/empty.png") no-repeat;
+  background-size: cover;
 }
 
-.cardSearch_notResult {
+.cardEmpty_notResult {
   display: flex;
   flex-direction: column;
   align-items: center;
