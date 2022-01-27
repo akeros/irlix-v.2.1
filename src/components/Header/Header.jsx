@@ -1,10 +1,12 @@
 import logo from "@images/logo.svg"
 import {useNavigate} from "react-router";
 import {useDispatch, useSelector} from "react-redux";
-import {setFilter} from "../../Redux/AppSlice";
-import {baseUrl} from "src/utils/routes";
+import {setFilter} from "@redux/AppSlice";
+import {baseUrl, favoritesUrl} from "src/utils/routes";
+import {useLocation} from "react-router-dom";
 
 import "./header.css";
+import {useEffect, useRef} from "react";
 
 const months = [
   "Января",
@@ -21,6 +23,9 @@ const months = [
 ];
 
 export const Header = ({ title }) => {
+  const favorites = useSelector((state => state.app.favorites));
+  const {pathname}= useLocation();
+  const isFavoriteUrl = pathname === favoritesUrl
   const dispatch = useDispatch();
   const filterType = useSelector(state => state.app.filterType);
   const date = new Date();
@@ -28,11 +33,20 @@ export const Header = ({ title }) => {
   const year = date.getFullYear();
   const day = date.getDate();
   const month = months[date.getMonth()];
+  const currentUrl = useRef(pathname);
+
+  useEffect(() => {
+    if (filterType && pathname !== currentUrl.current) {
+      dispatch(setFilter(undefined));
+    }
+    currentUrl.current = pathname;
+  }, [currentUrl?.current, pathname, filterType])
 
   const cards = useSelector((state) => state.app.cards);
 
   // collect all filters and remove duplicate values
-  const headers = Array.from(new Set(cards.map(card => card?.type))).filter(type => type);
+  const headers = Array.from(new Set(cards.filter(card => !isFavoriteUrl ||
+      favorites?.includes(card.id)).map(card => card?.type))).filter(type => type);
 
   const handleClick = () => {
     navigate(baseUrl)

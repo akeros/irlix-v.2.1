@@ -331,7 +331,7 @@ module.exports = function (webpackEnv) {
         '@components': path.join(__dirname, '../src/components'),
         '@api': path.join(__dirname, '../src/api'),
         '@redux': path.join(__dirname, '../src/Redux'),
-        '@utils': path.join(__dirname, '../src/Utils'),
+        '@utils': path.join(__dirname, '../src/utils'),
         '@background': path.join(__dirname, '../background'),
         '@card': path.join(__dirname, '../Card'),
         '@empty': path.join(__dirname, '../empty'),
