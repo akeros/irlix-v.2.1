@@ -5,11 +5,13 @@ import {CardEmpty} from "@components/CardSearch";
 export const Email = () =>  {
     const favorites = useSelector((state => state.app.favorites));
     const cards = useSelector((state => state.app.cards));
+    const filterType = useSelector(state => state.app.filterType);
  
     return (
         <div className="card-list">
             { favorites?.length ?
-                cards.filter(card => favorites.includes(card.id)).map((item) => (
+                cards.filter(card => favorites.includes(card.id) && (!filterType || card?.type === filterType)).map((item) =>
+                    (
                     <Card
                         img={item.img}
                         percents={item.percents}

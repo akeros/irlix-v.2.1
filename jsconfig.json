@@ -17,7 +17,7 @@
       "@background/*": ["./background/*"],
       "@card/*": ["./Card/*"],
       "@empty/*": ["./empty/*"],
-      "@utils/*": ["src/Utils/*"],
+      "@utils/*": ["src/utils/*"],
       "@modules/*": ["./src/reducers/*"],
       "@hooks/*": ["src/hooks/*"],
       "@assets/*": ["./assets/*"]
