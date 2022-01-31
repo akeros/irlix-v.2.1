@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/irlix-v.2.1/static/css/main.58404e5c.chunk.css",
+    "main.js": "/irlix-v.2.1/static/js/main.196d3d38.chunk.js",
+    "main.js.map": "/irlix-v.2.1/static/js/main.196d3d38.chunk.js.map",
+    "runtime-main.js": "/irlix-v.2.1/static/js/runtime-main.11a30861.js",
+    "runtime-main.js.map": "/irlix-v.2.1/static/js/runtime-main.11a30861.js.map",
+    "static/js/2.36e0007e.chunk.js": "/irlix-v.2.1/static/js/2.36e0007e.chunk.js",
+    "static/js/2.36e0007e.chunk.js.map": "/irlix-v.2.1/static/js/2.36e0007e.chunk.js.map",
+    "static/js/3.2da23bb1.chunk.js": "/irlix-v.2.1/static/js/3.2da23bb1.chunk.js",
+    "static/js/3.2da23bb1.chunk.js.map": "/irlix-v.2.1/static/js/3.2da23bb1.chunk.js.map",
+    "index.html": "/irlix-v.2.1/index.html",
+    "static/css/main.58404e5c.chunk.css.map": "/irlix-v.2.1/static/css/main.58404e5c.chunk.css.map",
+    "static/js/2.36e0007e.chunk.js.LICENSE.txt": "/irlix-v.2.1/static/js/2.36e0007e.chunk.js.LICENSE.txt",
+    "static/media/arrow.754c7f78.svg": "/irlix-v.2.1/static/media/arrow.754c7f78.svg",
+    "static/media/cancel.924336e2.svg": "/irlix-v.2.1/static/media/cancel.924336e2.svg",
+    "static/media/cardempty.css": "/irlix-v.2.1/static/media/empty.2216d389.png",
+    "static/media/flag.96d56951.svg": "/irlix-v.2.1/static/media/flag.96d56951.svg",
+    "static/media/flaggrey.9111f83b.svg": "/irlix-v.2.1/static/media/flaggrey.9111f83b.svg",
+    "static/media/kriv.9a9b4ebb.svg": "/irlix-v.2.1/static/media/kriv.9a9b4ebb.svg",
+    "static/media/logo.5bc32270.svg": "/irlix-v.2.1/static/media/logo.5bc32270.svg",
+    "static/media/search.52740e7a.svg": "/irlix-v.2.1/static/media/search.52740e7a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.11a30861.js",
+    "static/js/2.36e0007e.chunk.js",
+    "static/css/main.58404e5c.chunk.css",
+    "static/js/main.196d3d38.chunk.js"
+  ]
+}
