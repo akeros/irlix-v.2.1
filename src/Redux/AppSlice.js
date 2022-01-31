@@ -23,7 +23,7 @@ export const appSlice = createSlice({
       state.search = search;
 
       const filteredCards = state.startCards
-        .filterType(card => card.title.match(search)?.length
+        .filter(card => card.title.match(search)?.length
          || card.description.match(search)?.length);
 
       state.cards = filteredCards.length ? filteredCards : [{
