@@ -1,4 +1,4 @@
-import "./search.css";
+import "./search.scss";
 import {useDispatch, useSelector} from "react-redux";
 import cancel from "@images/cancel.svg"
 import {clearSearch, searching,} from "../../Redux/AppSlice";

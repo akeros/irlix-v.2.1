@@ -1,4 +1,4 @@
-import "./cardempty.css";
+import "./cardempty.scss";
 
 export const CardEmpty = ({text}) => (
     <div className="cardEmpty">

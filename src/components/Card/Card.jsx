@@ -1,4 +1,4 @@
-import "./card.css";
+import "./card.scss";
 import {Button} from "@components/Button";
 import empty from "@images/empty.png";
 import {descriptionUrl} from "src/utils/routes";

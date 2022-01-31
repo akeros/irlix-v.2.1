@@ -5,7 +5,7 @@ import {setFilter} from "@redux/AppSlice";
 import {baseUrl, favoritesUrl} from "src/utils/routes";
 import {useLocation} from "react-router-dom";
 
-import "./header.css";
+import "./header.scss";
 import {useEffect, useRef} from "react";
 
 const months = [

@@ -1,4 +1,4 @@
-import "./drinkdescription.css";
+import "./drinkdescription.scss";
 
 export const DrinkDescription = ({title, value, valueType, dots}) => (
     <div className="inner">
