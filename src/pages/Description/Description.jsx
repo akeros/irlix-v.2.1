@@ -10,7 +10,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {setCards, toggleFavorite} from "@redux/AppSlice";
 import {getCards} from "@api";
 import {baseUrl} from "src/utils/routes";
-import {useToast} from "@hooks";
+import {useToast} from "@hooks/useToast";
 
 const DOT = ".";
 

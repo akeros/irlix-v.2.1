@@ -3,7 +3,7 @@ import {Button} from "@components/Button";
 import empty from "@images/empty.png";
 import {descriptionUrl} from "src/utils/routes";
 import {useDispatch, useSelector} from "react-redux";
-import {useToast} from "@hooks";
+import {useToast} from "@hooks/useToast";
 import {toggleFavorite} from "../../Redux/AppSlice";
 import {Link} from "react-router-dom";
 
@@ -24,7 +24,7 @@ export const Card = ({img, percents, title, description, id, isEmpty}) => {
   };
 
   return (
-    <div className="card">
+    <div className={ isEmpty ? "cardEmpty" : "card" } >
       <div className="card__content">
         <Link className="card__content-style" to={!isEmpty && `${descriptionUrl}/${id}`}>
             <img className="card__content-style-image" alt="logo" src={isEmpty ? empty : img}/>
