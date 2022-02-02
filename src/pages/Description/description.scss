@@ -1,4 +1,18 @@
 $dark: #201F2E;
+.wrapp {
+    flex: 1;
+}
+.wrapp__fullback-src {
+    margin-right: 2px;
+    margin-top: 2px;
+}
+.description-text {
+    flex: 1;
+}
+.main-segment {
+    position: absolute;
+    height: 100%;
+}
 
 @media screen and (min-width: 100px) and (max-width: 385px) {
 
@@ -92,7 +106,6 @@ $dark: #201F2E;
 
 .main-segment {
     background-color: #0E0D13;
-    position: relative;
     padding: 0 32px 20px;
     z-index: 1;
 }
@@ -246,7 +259,6 @@ $dark: #201F2E;
 
 .main-segment {
     background: linear-gradient(180deg, #201F2E, #0E0D13);
-    position: relative;
     padding: 0 32px 20px;
     z-index: 1;
 }
@@ -393,7 +405,6 @@ $dark: #201F2E;
 
 .main-segment {
     background: linear-gradient(180deg, #201F2E, #0E0D13);
-    position: relative;
     padding: 0 32px 20px;
     z-index: 1;
 }
@@ -540,7 +551,6 @@ $dark: #201F2E;
 
 .main-segment {
     background: linear-gradient(180deg, #201F2E, #0E0D13);
-    position: relative;
     padding: 0 32px 20px;
     z-index: 1;
 }
@@ -687,7 +697,6 @@ $dark: #201F2E;
 
 .main-segment {
     background: linear-gradient(180deg, #201F2E, #0E0D13);
-    position: relative;
     padding: 0 32px 20px;
     z-index: 1;
 }

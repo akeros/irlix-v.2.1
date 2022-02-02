@@ -1,8 +1,7 @@
 import logo from "@images/logo.svg"
-import {useNavigate} from "react-router";
 import {useDispatch, useSelector} from "react-redux";
-import {clearSearch, setFilter} from "@redux/AppSlice";
-import {baseUrl, favoritesUrl, searchUrl} from "src/utils/routes";
+import {setFilter} from "@redux/AppSlice";
+import {favoritesUrl, searchUrl} from "src/utils/routes";
 import {useLocation} from "react-router-dom";
 
 import "./header.scss";
@@ -30,7 +29,6 @@ export const Header = ({ title }) => {
   const dispatch = useDispatch();
   const filterType = useSelector(state => state.app.filterType);
   const date = new Date();
-  const navigate = useNavigate();
   const year = date.getFullYear();
   const day = date.getDate();
   const month = months[date.getMonth()];
@@ -50,11 +48,6 @@ export const Header = ({ title }) => {
   const headers = !(isSearchUrl && search === "") && Array.from(new Set(cards.filter(card => !isFavoriteUrl ||
       favorites?.includes(card.id)).map(card => card?.type))).filter(type => type) || [];
 
-  const handleClick = () => {
-    dispatch(clearSearch());
-    navigate(baseUrl);
-  }
-
   const handleSwitch = (header) => {
     dispatch(setFilter(filterType !== header && header));
   }
@@ -63,7 +56,7 @@ export const Header = ({ title }) => {
     <header>
       <div className="table">
         <div className="table-wrapper">
-          <div className="table-wrapper-text" onClick={handleClick}>{title}</div>
+          <div className="table-wrapper-text">{title}</div>
           <div className="table-wrapper-date">{day} {month} {year}</div>
         </div>
           <div>

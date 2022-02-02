@@ -106,7 +106,7 @@ export const Description = () => {
   return (
     <div className="wrapp" ref={refDots}>
       <button className="wrapp__fullback" onClick={handleClick}>
-        <img src={arrow} alt="logo"/>
+        <img className="wrapp__fullback-src"src={arrow} alt="logo"/>
       </button>
       <div className="src">
           <img className="src__img" src={card.img} alt="logo"/>

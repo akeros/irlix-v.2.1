@@ -2,7 +2,6 @@
   padding: 0;
   border-width: 0px;
   border-radius: 38px;
-  overflow: hidden;
   height: 421px;
   width: 100%;
 }
@@ -17,6 +16,8 @@
   margin: 0 auto;
   width: 100%;
   padding: 16px 16px;
+  border-radius: 38px;
+  overflow: hidden;
   box-sizing: border-box;
 }
 
@@ -24,6 +25,7 @@
   width: 100%;
   height: 421px;
   object-fit: cover;
+  border-radius: 38px;
 }
 
 .card__noResult {
@@ -112,6 +114,7 @@
 }
 
 .card__content-style:before {
+  border-radius: 38px;
   content: '';
   position: absolute;
   height: 100%;
@@ -119,8 +122,6 @@
   top: 0;
   left: 0;
   background: linear-gradient(0deg, rgba(0,0,0,0.6505952722886029) 0%, rgba(255,255,255,0) 25%);
-  border-bottom-left-radius: 38px;
-  border-bottom-right-radius: 38px;
 }
 
 @media screen and (min-width: 768px) {
