@@ -1,3 +1,5 @@
+$dark: #201F2E;
+
 @media screen and (min-width: 100px) and (max-width: 385px) {
 
 .src__img {
@@ -7,7 +9,7 @@
 }
 .wrapp {
     min-width: 320px;
-    background-color: #201F2E;
+    background-color: $dark;
     display: flex;
     flex-direction: column;
     overflow: auto;
@@ -161,7 +163,7 @@
 }
 
 .wrapp {
-    background-color: #201F2E;
+    background-color: $dark;
     display: flex;
     flex-direction: column;
     overflow: auto;
@@ -308,7 +310,7 @@
     object-fit: cover;
 }
 .wrapp {
-    background-color: #201F2E;
+    background-color: $dark;
     display: flex;
     flex-direction: column;
     overflow: auto;
@@ -455,7 +457,7 @@
 }
 
 .wrapp {
-    background-color: #201F2E;
+    background-color: $dark;
     display: flex;
     flex-direction: column;
     overflow: auto;
@@ -596,7 +598,7 @@
 
 @media screen and (min-width: 1440px) and (max-width: 2560px){
 .wrapp {
-    background-color: #201F2E;
+    background-color: $dark;
     display: flex;
     flex-direction: column;
     overflow: auto;

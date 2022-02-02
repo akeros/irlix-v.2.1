@@ -1,4 +1,4 @@
-import "./footer.css";
+import "./footer.scss";
 import search from "@images/search.svg"
 import {useNavigate} from "react-router";
 import {favoritesUrl, searchUrl} from "src/utils/routes";

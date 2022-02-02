@@ -1,11 +1,11 @@
 import logo from "@images/logo.svg"
 import {useNavigate} from "react-router";
 import {useDispatch, useSelector} from "react-redux";
-import {setFilter} from "@redux/AppSlice";
-import {baseUrl, favoritesUrl} from "src/utils/routes";
+import {clearSearch, setFilter} from "@redux/AppSlice";
+import {baseUrl, favoritesUrl, searchUrl} from "src/utils/routes";
 import {useLocation} from "react-router-dom";
 
-import "./header.css";
+import "./header.scss";
 import {useEffect, useRef} from "react";
 
 const months = [
@@ -26,6 +26,7 @@ export const Header = ({ title }) => {
   const favorites = useSelector((state => state.app.favorites));
   const {pathname}= useLocation();
   const isFavoriteUrl = pathname === favoritesUrl
+  const isSearchUrl = pathname === searchUrl
   const dispatch = useDispatch();
   const filterType = useSelector(state => state.app.filterType);
   const date = new Date();
@@ -43,13 +44,15 @@ export const Header = ({ title }) => {
   }, [currentUrl?.current, pathname, filterType])
 
   const cards = useSelector((state) => state.app.cards);
+  const search = useSelector((state) => state.app.search);
 
   // collect all filters and remove duplicate values
-  const headers = Array.from(new Set(cards.filter(card => !isFavoriteUrl ||
-      favorites?.includes(card.id)).map(card => card?.type))).filter(type => type);
+  const headers = !(isSearchUrl && search === "") && Array.from(new Set(cards.filter(card => !isFavoriteUrl ||
+      favorites?.includes(card.id)).map(card => card?.type))).filter(type => type) || [];
 
   const handleClick = () => {
-    navigate(baseUrl)
+    dispatch(clearSearch());
+    navigate(baseUrl);
   }
 
   const handleSwitch = (header) => {

@@ -1,6 +1,6 @@
 import arrow from "@images/arrow.svg"
 import kriv from "@images/kriv.svg"
-import "./description.css";
+import "./description.scss";
 import {useNavigate} from "react-router";
 import {useEffect, useRef, useState } from "react";
 import {useParams} from "react-router-dom";
@@ -10,7 +10,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {setCards, toggleFavorite} from "@redux/AppSlice";
 import {getCards} from "@api";
 import {baseUrl} from "src/utils/routes";
-import {useToast} from "@hooks";
+import {useToast} from "@hooks/useToast";
 
 const DOT = ".";
 
