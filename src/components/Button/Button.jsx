@@ -3,9 +3,9 @@ import flaggrey from "@images/flaggrey.svg";
 
 export const Button = ({isFavorite, onClick, className}) => {
 return (
-    <button className={className} onClick={onClick}>
+    <span className={className} onClick={onClick}>
         <img src={isFavorite ? flag : flaggrey} alt="logo"/>
-    </button>
+    </span>
 );
 }
 
