@@ -21,7 +21,7 @@ export const Main = () => {
   }, [dispatch])
 
   return (
-    <div className="card-list">
+    <div className="container">
       {cards?.filter(card => !filterType || card?.type === filterType)?.map((item) => (
         <Card
           img={item.img}

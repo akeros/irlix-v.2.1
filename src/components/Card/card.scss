@@ -1,4 +1,4 @@
-.card__content-style {
+.card__link {
   padding: 0;
   border-width: 0px;
   border-radius: 38px;
@@ -6,13 +6,13 @@
   width: 100%;
 }
 
-.card__content {
+.card {
   display: flex;
   position: relative;
   width: 100%;
 }
 
-.card {
+.col {
   margin: 0 auto;
   width: 100%;
   padding: 16px 16px;
@@ -21,7 +21,7 @@
   box-sizing: border-box;
 }
 
-.card__content-style-image {
+.card__image {
   width: 100%;
   height: 421px;
   object-fit: cover;
@@ -60,7 +60,7 @@
   padding: 20px 10px;
 }
 
-.card__percents {
+.card__cardblack-percents {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -68,7 +68,7 @@
   color: #FFFFFF;
 }
 
-.card__alcohol {
+.card__cardblack-alcohol {
   width: 61px;
   font-style: normal;
   font-weight: 300;
@@ -76,13 +76,13 @@
   color: #C4C1CF;
 }
 
-.description{
+.card__text{
   position: absolute;
   left: 32px;
   bottom: 24px;
 }
 
-.description__title {
+.card__title {
   left: 32px;
   top: 83.29%;
   bottom: 10.12%;
@@ -93,7 +93,7 @@
   color: #FFFFFF;
 }
 
-.flag {
+.card__flag {
   position: absolute;
   top: -8px;
   right: 32px;
@@ -102,7 +102,7 @@
   cursor: pointer;
 }
 
-.description__title-down {
+.card__subtitle {
   left: 32px;
   top: 89.41%;
   bottom: 5.65%;
@@ -125,7 +125,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .card {
+  .col {
     width: 50%;
     padding: 16px 16px;
     box-sizing: border-box;
@@ -133,7 +133,7 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .card {
+  .col {
     width: 33%;
     padding: 16px 16px;
     box-sizing: border-box;
@@ -141,7 +141,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .card {
+  .col {
     width: 25%;
     padding: 16px 16px;
     margin: 0 auto;
