@@ -28,7 +28,7 @@
   border-radius: 38px;
 }
 
-.card__noResult {
+.card__Result {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +46,7 @@
   color: #FFFFFF;
 }
 
-.card__cardblack {
+.card__card-black {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -60,7 +60,7 @@
   padding: 20px 10px;
 }
 
-.card__cardblack-percents {
+.card__percents {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -68,7 +68,7 @@
   color: #FFFFFF;
 }
 
-.card__cardblack-alcohol {
+.card__type {
   width: 61px;
   font-style: normal;
   font-weight: 300;
@@ -113,7 +113,7 @@
   color: #C4C1CF;
 }
 
-.card__content-style:before {
+.card__link:before {
   border-radius: 38px;
   content: '';
   position: absolute;
